@@ -1,0 +1,216 @@
+.title-heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 34px;
+    color: #376489;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  .custom-gradient {
+    background-image: linear-gradient(
+      90deg,
+      rgba(194, 213, 228, 0.5008054247089461) 0%,
+      rgba(194, 213, 228, 1) 50%,
+      rgba(194, 213, 228, 1) 100%
+    );
+  }
+
+  .custom-clip {
+    clip-path: inset(0 0 10% 0);
+  }
+  /* Fonts */
+  .font-raleway {
+    font-family: "Raleway", sans-serif;
+  }
+
+  .font-mangolia {
+    font-weight: 400;
+    font-family: "Magnolia Script", sans-serif;
+  }
+
+  .font-brittany {
+    font-family: "Brittany Signature", sans-serif;
+  }
+
+  .font-montserrat {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  /* Titles & Headings */
+  .title-heading {
+    text-align: center;
+    text-transform: uppercase;
+    color: #376489;
+    font-family: "Montserrat", sans-serif;
+
+    font-weight: 800;
+  }
+
+  .gradiant-bg-color-img {
+    background-blend-mode: multiply;
+    background-image: linear-gradient(to right, #faf5f0, #faf5f000),
+      linear-gradient(to bottom, #faf5f000, #faf5f000),
+      linear-gradient(to left, #faf5f0, #faf5f000);
+  }
+  .gradiant-border-blue {
+    border: 1px solid transparent;
+    border-image: linear-gradient(to bottom, #fafafa00, #274c69) 1;
+    transition: 0.3s ease all;
+  }
+  .gradiant-border-pink {
+    border: 1px solid transparent;
+    border-image: linear-gradient(to bottom, #fafafa00, #c1989f) 1;
+    transition: 0.3s ease all;
+  }
+  .Offerings-hover-blue {
+    transition: 0.3s ease all;
+  }
+  .Offerings-hover-blue:hover .gradiant-border-blue {
+    background-color: #4a7393;
+    color: #fff !important;
+  }
+
+  .Offerings-hover-blue:hover .gradiant-border-blue-text {
+    color: #c2d5e4 !important;
+  }
+
+  .Offerings-hover-blue-img {
+    transition: 0.3s ease all;
+  }
+  .Offerings-hover-blue:hover .Offerings-hover-blue-img {
+    transform: scale(2);
+  }
+
+  .Offerings-hover-blue-text {
+    transition: 0.3s ease all;
+  }
+  .Offerings-hover-blue:hover .Offerings-hover-blue-text {
+    background-color: #4a7393;
+    color: #c2d5e4 !important;
+  }
+  .Offerings-hover-blue:hover .Offerings-hover-blue-text p {
+    color: #c2d5e4 !important;
+  }
+
+  .Offerings-hover-blue:hover button {
+    background-color: #c2d5e4;
+    color: #4a7393;
+  }
+
+  .Offerings-hover-pink {
+    transition: 0.3s ease all;
+  }
+  .Offerings-hover-pink:hover .gradiant-border-pink {
+    background-color: #c6a2a7;
+    color: #fff !important;
+  }
+
+  .Offerings-hover-pink:hover .gradiant-border-pink-text {
+    color: #f1e1e4 !important;
+  }
+
+  .Offerings-hover-pink-img {
+    transition: 0.3s ease all;
+  }
+  .Offerings-hover-pink:hover .Offerings-hover-pink-img {
+    transform: scale(2);
+  }
+
+  .Offerings-hover-pink-text {
+    transition: 0.3s ease all;
+  }
+  .Offerings-hover-pink:hover .Offerings-hover-pink-text {
+    background-color: #c6a2a7;
+    color: #f1e1e4 !important;
+  }
+  .Offerings-hover-pink:hover .Offerings-hover-pink-text p {
+    color: #f1e1e4 !important;
+  }
+
+  .Offerings-hover-pink:hover button {
+    background-color: #f1e1e4;
+    color: #c6a2a7;
+  }
+  .Heading-pink {
+    transition: 0.3s ease all !important;
+  }
+  .Heading-pink img {
+    transition: 0.3s ease all;
+  }
+  .Heading-pink:hover img {
+    transform: scale(1.2);
+  }
+
+  .Heading-pink:hover .title-container {
+    background-color: #f1e1e4;
+    transition: 0.3s ease all;
+  }
+  .Heading-pink:hover h2 {
+    color: #c1989f !important;
+  }
+  .Heading-pink .heading-container-pink {
+    transition: 0.3s ease all;
+  }
+  .Heading-pink:hover .heading-container-pink {
+    background-color: #c1989f;
+  }
+
+  .Heading-pink:hover .heading-container-pink p {
+    transition: 0.3s ease all;
+  }
+  .Heading-pink:hover .heading-container-pink p {
+    color: #f1e1e4;
+  }
+
+  .Heading-pink:hover button {
+    background-color: #f1e1e4;
+    color: #c1989f;
+  }
+
+  .Heading-blue {
+    transition: 0.3s ease all !important;
+  }
+  .Heading-blue img {
+    transition: 0.3s ease all;
+  }
+  .Heading-blue:hover img {
+    transform: scale(1.2);
+  }
+
+  .Heading-blue:hover .title-container-blue {
+    background-color: #c2d5e4;
+    transition: 0.3s ease all;
+  }
+  .Heading-blue:hover h2 {
+    color: #274c69 !important;
+  }
+  .Heading-blue .heading-container-blue {
+    transition: 0.3s ease all;
+  }
+  .Heading-blue:hover .heading-container-blue {
+    background-color: #274c69;
+  }
+
+  .Heading-blue:hover .heading-container-blue p {
+    transition: 0.3s ease all;
+  }
+  .Heading-blue:hover .heading-container-blue p {
+    color: #c2d5e4;
+  }
+
+  .Heading-blue:hover button {
+    background-color: #c2d5e4;
+    color: #274c69;
+  }
+  footer {
+    font-family: "Raleway", sans-serif !important;
+  }
+  .about-container a:hover {
+    text-decoration: underline;
+  }
+  .courses-container-container a:hover {
+    text-decoration: underline;
+  }
