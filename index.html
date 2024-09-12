@@ -14,31 +14,31 @@
   <body>
       <!-- flex w-full relative top-[-3.75rem] mx-auto bg-black min-h-screen items-center justify-center -->
       <header class="bg-white font-raleway shadow-lg font-bold text-[12.5px] uppercase leading-[23.48px] tracking-[0.3em] text-[#274C69]">
-        <nav class="container mx-auto p-[25px]" style="margin-left: 0;">
+        <nav class="container mx-auto p-[10px] md:margin-[0]">
           <div class="flex justify-center space-x-[90px] items-center">
             <!-- Profile Icon (Only on Small Devices) -->
-            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse md:hidden block">
-              <img src="assets/mobile/profile-con.png" class="h-8" alt="Profile Icon" />
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse md:flex lg:hidden block">
+              <img src="assets/mobile/profile-con.png" class="h-8 md:h-[45px]" alt="Profile Icon" />
             </a>
 
             <!-- Left Menu (Only on Large Devices) -->
-            <div class="hidden md:flex space-x-14">
+            <div class="hidden lg:flex space-x-14" style="margin-left: 0px;">
               <a href="/about" class="hover:text-blue-500">About</a>
               <a href="/courses" class="hover:text-blue-500">Courses</a>
               <a href="/resources" class="hover:text-blue-500">Resources</a>
             </div>
             
             <!-- Logo -->
-            <div class="flex flex-1 justify-center items-center">
-              <a href="/">
-                <img src="assets/logo.png" alt="Logo" class="transform h-[60px] md:h-[80px] lg:h-[100px] xl:h-[120px]" />
+            <div class="flex justify-center items-center">
+              <a href="#">
+                <img src="assets/logo.png" alt="Logo" class="transform h-[35px] md:h-[70px] lg:h-[50px] xl:h-[70px]" />
               </a>
             </div>
 
             <!-- Right Menu (Only on Large Devices) -->
-            <div class="hidden md:flex space-x-14">
+            <div class="flex hidden lg:flex space-x-14 place-items-center">
               <a href="#" class="hover:text-blue-500">Book</a>
-              <a href="#" class="hover:text-blue-500">Work With Me</a>
+              <a href="#" class="hover:text-blue-500 md:text-xs md:text-center">Work With Me</a>
               <a href="#" class="hover:text-blue-500">Blog</a>
             </div>
 
@@ -56,9 +56,9 @@
               </ul>
             </div>
             <!-- Menu Button for Small Devices -->
-            <button id="menu-btn" type="button" class="inline-flex items-center justify-center text-lg text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <button id="menu-btn" type="button" class="inline-flex items-center justify-center text-lg text-gray-500 rounded-lg md:flex lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
-              <img src="assets/mobile/icon-menu.png" alt="Menu Icon">
+              <img class="md:h-[35px]" src="assets/mobile/icon-menu.png" alt="Menu Icon">
             </button>
           </div>
         </nav>
@@ -154,29 +154,29 @@
       
       
       <!-- Section 3: Image Banner -->
-<section class="relative flex overflow-x-hidden items-center justify-center h-[80%] w-full bg-cover bg-center bg-left" id="_image-banner">
-  <div class="flex-shrink-0 p-2">
-    <img class="w-[80%] resize-image" src="assets/banner/first.png" alt="Image" />
-  </div>
-  <div class="flex-shrink-0 p-2">
-    <img class="w-[80%] resize-image" src="assets/banner/second.png" alt="Image" />
-  </div>
-  <div class="flex-shrink-0 p-2">
-    <img class="w-[80%] resize-image" src="assets/banner/third.png" alt="Image" />
-  </div>
-  <div class="flex-shrink-0 p-2">
-    <img class="w-[80%] resize-image" src="assets/banner/fourth.png" alt="Image" />
-  </div>
-  <div class="flex-shrink-0 p-2">
-    <img class="w-[80%] resize-image" src="assets/banner/fifth.png" alt="Image" />
-  </div>
-  <div class="flex-shrink-0 p-2">
-    <img class="w-[80%] resize-image" src="assets/banner/sixth.png" alt="Image" />
-  </div>
-  <div class="flex-shrink-0 p-2">
-    <img class="w-[80%] resize-image" src="assets/banner/seventh.png" alt="Image" />
-  </div>
-</section>
+    <section class="relative flex overflow-x-hidden items-center justify-center h-[80%] w-full bg-cover bg-center bg-left" id="_image-banner">
+      <div class="flex-shrink-0 p-2">
+        <img class="w-[80%] resize-image" src="assets/banner/first.png" alt="Image" />
+      </div>
+      <div class="flex-shrink-0 p-2">
+        <img class="w-[80%] resize-image" src="assets/banner/second.png" alt="Image" />
+      </div>
+      <div class="flex-shrink-0 p-2">
+        <img class="w-[80%] resize-image" src="assets/banner/third.png" alt="Image" />
+      </div>
+      <div class="flex-shrink-0 p-2">
+        <img class="w-[80%] resize-image" src="assets/banner/fourth.png" alt="Image" />
+      </div>
+      <div class="flex-shrink-0 p-2">
+        <img class="w-[80%] resize-image" src="assets/banner/fifth.png" alt="Image" />
+      </div>
+      <div class="flex-shrink-0 p-2">
+        <img class="w-[80%] resize-image" src="assets/banner/sixth.png" alt="Image" />
+      </div>
+      <div class="flex-shrink-0 p-2">
+        <img class="w-[80%] resize-image" src="assets/banner/seventh.png" alt="Image" />
+      </div>
+    </section>
 
       <!-- Section 4: Podcast -->
 
@@ -190,13 +190,13 @@
           <h1 class="font-mangolia text-[#C1989F] text-[30px] md:text-[40px] mt-2 md:mt-3">Podcast</h1>
         </div>
       
-        <div class="mt-4 flex flex-col md:flex-row md:flex-wrap justify-center gap-6">
+        <div class="mt-4 flex flex-col md:flex-row md:flex-wrap justify-center gap-8">
           <!-- Card1 -->
           <div class="flex-shrink-0 w-full md:w-[19rem] h-[auto] md:h-[45rem]">
             <div class="relative bg-transparent mx-2">
               <div class="relative overflow-hidden">
                 <div class="mx-6 border border-[#cfafb3] flex items-center justify-center h-4"></div>
-                <img alt="Parent Courses" class="w-full h-[12rem] md:h-[20rem] object-cover" src="assets/cards/card-1.jpg" />
+                <img alt="Parent Courses" class="w-full h-[12rem] md:h-[20rem] object-cover sm:bg-center" src="assets/cards/card-1.jpg" />
               </div>
               <div class="relative w-full">
                 <div class="absolute w-[90%] mx-[5%] p-3 -top-5 bg-[#F1E1E4] text-center heading-container-pink">
