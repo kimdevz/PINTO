@@ -3,480 +3,301 @@
   <head>
     <title>Stephanie Pinto</title>
     <!-- Import Tailwind CSS and External Stylesheet -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"/>
   </head>
   <body>
-    <div>
       <!-- flex w-full relative top-[-3.75rem] mx-auto bg-black min-h-screen items-center justify-center -->
       <header class="bg-white font-raleway shadow-lg font-bold text-[12.5px] uppercase leading-[23.48px] tracking-[0.3em] text-[#274C69]">
-        <nav class="container mx-auto p-[25px]">
+        <nav class="container mx-auto p-[25px]" style="margin-left: 0;">
           <div class="flex justify-center space-x-[90px] items-center">
-            <!-- Left Menu -->
+            <!-- Profile Icon (Only on Small Devices) -->
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse md:hidden block">
+              <img src="assets/mobile/profile-con.png" class="h-8" alt="Profile Icon" />
+            </a>
+
+            <!-- Left Menu (Only on Large Devices) -->
             <div class="hidden md:flex space-x-14">
               <a href="/about" class="hover:text-blue-500">About</a>
               <a href="/courses" class="hover:text-blue-500">Courses</a>
               <a href="/resources" class="hover:text-blue-500">Resources</a>
             </div>
-
+            
             <!-- Logo -->
-            <div class="flex justify-center items-center h-12">
+            <div class="flex flex-1 justify-center items-center">
               <a href="/">
-                <img
-                  src="assets/logo.png"
-                  alt="Logo"
-                  class="transform h-[60px] scale-150"
-                />
+                <img src="assets/logo.png" alt="Logo" class="transform h-[60px] md:h-[80px] lg:h-[100px] xl:h-[120px]" />
               </a>
             </div>
 
-            <!-- Right Menu -->
+            <!-- Right Menu (Only on Large Devices) -->
             <div class="hidden md:flex space-x-14">
               <a href="#" class="hover:text-blue-500">Book</a>
               <a href="#" class="hover:text-blue-500">Work With Me</a>
               <a href="#" class="hover:text-blue-500">Blog</a>
             </div>
+
+            <!-- Menu List -->
+            <!-- Menu List (Only on Small Devices) -->
+            <div id="navbar-default" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex flex-col items-center justify-center space-y-4 md:hidden hidden">
+              <button id="close-btn" class="absolute top-4 right-4 text-white text-2xl">×</button>
+              <ul class="flex flex-col items-center space-y-4 text-white">
+                <li><a href="/about" class="hover:text-blue-500">About</a></li>
+                <li><a href="/courses" class="hover:text-blue-500">Courses</a></li>
+                <li><a href="/resources" class="hover:text-blue-500">Resources</a></li>
+                <li><a href="#" class="hover:text-blue-500">Book</a></li>
+                <li><a href="#" class="hover:text-blue-500">Work With Me</a></li>
+                <li><a href="#" class="hover:text-blue-500">Blog</a></li>
+              </ul>
+            </div>
+            <!-- Menu Button for Small Devices -->
+            <button id="menu-btn" type="button" class="inline-flex items-center justify-center text-lg text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <img src="assets/mobile/icon-menu.png" alt="Menu Icon">
+            </button>
           </div>
         </nav>
       </header>
 
       <!-- Hero Section with Background Image and Overlay -->
-      <section
-        class="relative h-screen hero-section w-full bg-cover bg-center bg-left"
-        style="
-          background-image: linear-gradient(
-              to right,
-              rgba(1, 43, 144, 0.9) 0%,
-              rgba(1, 43, 144, 0) 50%
-            ),
-            url('assets/hero.jpg');
-        "
-      >
-        <div
-          class="relative h-[90%] flex flex-col justify-center items-center text-white pl-24 w-1/2"
-        >
-          <h2
-            class="text-white font-mangolia text-[28px] leading-[56.4px] text-center mb-1"
-          >
+      <section class="relative h-screen hero-section w-full bg-cover bg-center bg-left" id="_hero-section">
+        <div class="relative h-[90%] flex flex-col justify-center items-center text-white pl-24 w-1/2">
+          <h2 class="text-white font-mangolia text-[28px] leading-[56.4px] text-center mb-1">
             Lorem ipsum dolor sit amet consectetur.
           </h2>
-          <h1
-            style="font-weight: 800"
-            class="uppercase text-[40px] text-center"
-          >
+          <h1 style="font-weight: 800" class="uppercase text-[40px] text-center">
             Emotional <br />
-            Intelligence Speaker <br />
+            Intelligence <span class="speaker">Speaker</span> <br />
             & Author
           </h1>
-          <a
-            style="font-weight: 600"
+          <a style="font-weight: 600"
             class="bg-[rgba(241,225,228,1)] mt-10 text-[14px] text-[#274C69] border border-gray-300 rounded-[40px] px-[50px] py-[10px]"
-            href="#"
-          >
+            href="#">
             Learn More
           </a>
         </div>
       </section>
 
       <!-- Introduction Section -->
-      <section class="flex m-[60px] z-10 w-full">
+      <section class="flex flex-col md:flex-row m-4 md:m-[60px] z-10 w-full intro-section">
         <!-- Text Content -->
-        <div class="w-[50%] flex justify-center items-center z-10 p-4">
+        <div class="w-full md:w-[50%] flex justify-center items-center z-10 p-4">
           <div>
-            <h2
-              class="text-[40px] mt-12 px-[23px] text-[#376489] font-bold mb-4 font-[400] font-brittany"
-            >
+            <h2 class="text-[28px] md:text-[40px] mt-8 md:mt-12 px-6 md:px-[23px] text-[#376489] font-bold mb-4 font-[400] font-brittany">
               Hi, I'm <span class="text-[#C1989F]">Stephanie</span>
             </h2>
-            <div
-              class="text-[#274C69] leading-[17px] px-[23px] font-[500] space-y-6 text-[14px]"
-            >
+            <div class="text-[#274C69] leading-[22px] md:leading-[17px] px-6 md:px-[23px] font-[500] space-y-4 md:space-y-6 text-[16px] md:text-[14px]">
               <p>
-                Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi
-                nulla nec. Risus id risus risus duis quisque dignissim amet.
-                Tempus enim volutpat elit vel a nisl eu felis. Leo eget donec
-                ullamcorper adipiscing faucibus blandit. Tellus sem facilisis
-                proin amet sit egestas purus. Urna feugiat morbi pharetra turpis
-                enim posuere ut massa velit. Amet mattis volutpat sit leo dolor
-                pellentesque nunc.
+                Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi nulla nec. Risus id risus risus duis quisque dignissim amet. Tempus enim volutpat elit vel a nisl eu felis. Leo eget donec ullamcorper adipiscing faucibus blandit. Tellus sem facilisis proin amet sit egestas purus.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi
-                nulla nec. Risus id risus risus duis quisque dignissim amet.
-                Tempus enim volutpat elit vel a nisl eu felis. Leo eget donec
-                ullamcorper senectus consequat. Hendrerit sed enim habitasse in.
+                Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi nulla nec. Risus id risus risus duis quisque dignissim amet. Tempus enim volutpat elit vel a nisl eu felis. Leo eget donec ullamcorper senectus consequat. Hendrerit sed enim habitasse in.
               </p>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi
-                nulla nec. Risus id risus risus duis quisque dignissim amet.
-                Tempus enim volutpat elit vel a nisl eu felis. Leo eget donec
-                ullamcorper senectus consequat. Hendrerit sed enim habitasse in.
-                Sed tempor ullamcorper adipiscing faucibus blandit.
+                Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi nulla nec. Risus id risus risus duis quisque dignissim amet. Tempus enim volutpat elit vel a nisl eu felis. Leo eget donec ullamcorper senectus consequat. Hendrerit sed enim habitasse in. Sed tempor ullamcorper adipiscing faucibus blandit.
               </p>
             </div>
           </div>
         </div>
         <!-- Image Section -->
-        <!-- w-1/2 -->
-        <div class="w-1/2 flex items-center p-4 relative">
-          <img class="w-[75%]" src="assets/section1.png" alt="Image" />
+        <div class="w-full md:w-1/2 flex justify-center items-center p-4 relative">
+          <img class="w-[85%] md:w-[75%]" src="assets/section1.png" alt="Image">
         </div>
       </section>
 
       <!-- Section 2: Why Emotional Intelligent Parenting? -->
-      <section class="flex relative m-[60px] mb-[2px] pb-[30px] w-full overflow-hidden">
-        <div class="absolute right-[25%] -bottom-[200px] -z-[50] max-w-[650px]">
+      <section class="flex flex-col-reverse md:flex-row relative m-4 md:m-[60px] mb-[2px] pb-[30px] w-full overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute w-full top-[490px] md:top-auto md:-bottom-[200px] -z-[50]">
           <div class="relative">
-            <img src="assets/Emotional-Intelligence-bg.jpg" class=" " alt="" />
-            <div
-              class="absolute w-full h-full left-0 top-0 gradiant-bg-color-img"
-            ></div>
+            <img src="assets/Emotional-Intelligence-bg.jpg" class="w-full" alt="Background Image" />
+            <div class="absolute w-full h-full left-0 top-0 gradiant-bg-color-img"></div>
           </div>
         </div>
-
-        <!-- Image Section -->
-        <div class="w-[40%] flex justify-center items-center p-4 relative">
-          <img class="w-[95%]" src="assets/section-2.png" alt="Image" />
+        
+      
+        <!-- Image Section (below text on small devices) -->
+        <div class="w-full md:w-[40%] flex justify-center items-center p-4 relative">
+          <img class="w-[85%] md:w-[95%]" src="assets/section-2.png" alt="Image" />
         </div>
+      
         <!-- Text Content -->
-        <div class="w-[50%] flex justify-start items-center">
+        <div class="w-full md:w-[50%] flex justify-start items-center">
           <div>
-            <h2
-              class="text-[34px] mt-12 px-[23px] text-[#376489] font-bold mb-4 font-[400]"
-            >
-              <span class="font-mangolia"> Why </span>
-              <span class="text-[#C1989F] uppercase font-[800]"
-                >Emotional Intelligence</span
-              >
-              <br /><span class="font-montserrat uppercase font-[800]"
-                >Parenting?</span
-              >
+            <h2 class="text-[28px] md:text-[34px] mt-8 md:mt-12 px-4 md:px-[23px] text-[#376489] font-bold mb-4 font-[400]">
+              <span class="font-mangolia">Why </span>
+              <span class="text-[#C1989F] uppercase font-[800]">Emotional Intelligence</span>
+              <br />
+              <span class="font-montserrat uppercase font-[800]">Parenting?</span>
             </h2>
-            <div
-              class="text-[#274C69] leading-[17px] px-[23px] font-[500] space-y-6 text-[14px]"
-            >
+            <div class="text-[#274C69] leading-[22px] md:leading-[17px] px-4 md:px-[23px] font-[500] space-y-4 md:space-y-6 text-[16px] md:text-[14px]">
               <p>
-                Emotionally intelligent parents positively manage their own
-                emotions whilst confidently supporting their child's 'big'
-                emotions, such as frustration, anger, and anxiety. The result is
-                a more calm, connected home where life just starts to flow.
+                Emotionally intelligent parents positively manage their own emotions whilst confidently supporting their child's 'big'
+                emotions, such as frustration, anger, and anxiety. The result is a more calm, connected home where life just starts to flow.
               </p>
               <p>
-                Emotional intelligence is fast becoming sought after in schools
-                for both educators and their students. Research shows classrooms
-                are calmer, run more smoothly and even record fewer behavior
-                reports.
+                Emotional intelligence is fast becoming sought after in schools for both educators and their students. Research shows classrooms
+                are calmer, run more smoothly and even record fewer behavior reports.
               </p>
               <p>
-                In short, Emotional Intelligence is the way forward for raising
-                humans who are empathetic, self-aware, kind, and resilient.
+                In short, Emotional Intelligence is the way forward for raising humans who are empathetic, self-aware, kind, and resilient.
               </p>
             </div>
           </div>
         </div>
       </section>
-
+      
+      
       <!-- Section 3: Image Banner -->
-
-      <section
-        class="relative flex justify-between items-center h-[80%] w-full bg-cover bg-center bg-left"
-        style="
-          background-image: linear-gradient(
-              to right,
-              rgba(193, 152, 159, 0.9) 80%,
-              rgba(193, 152, 159, 0.9) 80%
-            ),
-            url('assets/banner.png');
-        "
-      >
-        <div class="py-14">
-          <img class="w-[80%]" src="assets/banner/first.png" alt="Image" />
-        </div>
-        <div>
-          <img class="w-[80%]" src="assets/banner/second.png" alt="Image" />
-        </div>
-        <div>
-          <img class="w-[80%]" src="assets/banner/third.png" alt="Image" />
-        </div>
-        <div>
-          <img class="w-[80%]" src="assets/banner/fourth.png" alt="Image" />
-        </div>
-        <div>
-          <img class="w-[80%]" src="assets/banner/fifth.png" alt="Image" />
-        </div>
-        <div>
-          <img class="w-[80%]" src="assets/banner/sixth.png" alt="Image" />
-        </div>
-        <div>
-          <img class="w-[100%]" src="assets/banner/seventh.png" alt="Image" />
-        </div>
-      </section>
+<section class="relative flex overflow-x-auto items-center justify-center h-[80%] w-full bg-cover bg-center bg-left" id="_image-banner">
+  <div class="flex-shrink-0 p-2">
+    <img class="w-[80%] resize-image" src="assets/banner/first.png" alt="Image" />
+  </div>
+  <div class="flex-shrink-0 p-2">
+    <img class="w-[80%] resize-image" src="assets/banner/second.png" alt="Image" />
+  </div>
+  <div class="flex-shrink-0 p-2">
+    <img class="w-[80%] resize-image" src="assets/banner/third.png" alt="Image" />
+  </div>
+  <div class="flex-shrink-0 p-2">
+    <img class="w-[80%] resize-image" src="assets/banner/fourth.png" alt="Image" />
+  </div>
+  <div class="flex-shrink-0 p-2">
+    <img class="w-[80%] resize-image" src="assets/banner/fifth.png" alt="Image" />
+  </div>
+  <div class="flex-shrink-0 p-2">
+    <img class="w-[80%] resize-image" src="assets/banner/sixth.png" alt="Image" />
+  </div>
+  <div class="flex-shrink-0 p-2">
+    <img class="w-[80%] resize-image" src="assets/banner/seventh.png" alt="Image" />
+  </div>
+</section>
 
       <!-- Section 4: Podcast -->
 
-      <section class="my-20 mx-6">
+      <section class="my-6 mx-4 md:my-20 md:mx-6">
         <!-- Heading of section -->
-        <div class="text-[34px] text-center">
+        <div class="text-[24px] md:text-[34px] text-center">
           <div class="text-[#376489] font-montserrat uppercase font-[800]">
-            <h1>Emotional Intelligent parenting?</h1>
-            <h1 class="leading-7 text-[#C1989F]">with stephanie PINTO</h1>
+            <h1>Emotional Intelligent Parenting?</h1>
+            <h1 class="leading-7 text-[#C1989F] text-[20px] md:text-[34px]">with Stephanie PINTO</h1>
           </div>
-          <h1 class="font-mangolia text-[#C1989F] text-[40px] mt-3">Podcast</h1>
+          <h1 class="font-mangolia text-[#C1989F] text-[30px] md:text-[40px] mt-2 md:mt-3">Podcast</h1>
         </div>
-        <div
-          class="mt-4 w-full h-screen flex justify-center gap-0 overflow-hidden"
-        >
-          <!-- Card1: -->
-          <div class="flex Heading-pink">
-            <div class="w-[19rem] h-[45rem]">
-              <div class="bg-transparent mx-2 mx-2 mx-2 mx-2">
-                <div class="relative overflow-hidden">
-                  <div
-                    class="mx-6 border border-[#cfafb3] flex items-center justify-center h-4"
-                  ></div>
-                  <img
-                    alt="Parent Courses"
-                    class="z-20 w-full h-[20rem] object-cover"
-                    src="assets/cards/card-1.jpg"
-                  />
-                </div>
-
-                <div class="relative w-full">
-                  <div
-                    class="absolute w-[90%] mx-[5%] p-3 -top-5 bg-[#F1E1E4] text-center heading-container-pink"
-                  >
-                    <div
-                      class="mx-12 absolute title-container inset-x-0 -top-2 py-1 bg-[#C1989F] flex justify-center"
-                    >
-                      <h2
-                        class="text-[#FAF5F0] font-montserrat text-sm font-medium"
-                      >
-                        Episode - 40
-                      </h2>
-                    </div>
-
-                    <div class="mt-6 mb-4">
-                      <p
-                        class="text-[#C1989F] font-montserrat text-xl uppercase w-[95%] mx-auto font-bold"
-                      >
-                        Timing your Triggers with
-                      </p>
-                      <p class="font-mangolia text-2xl text-[#C1989F] mt-3">
-                        Emotional Intelligence
-                      </p>
-
-                      <p class="text-gray-700 text-sm my-6">
-                        With Stephanie Pinto
-                      </p>
-                      <button
-                        class="mt-4 bg-[#C1989F] text-[#F1E1E4] uppercase text-white py-2 text-sm px-12 rounded-full w-[80%]"
-                      >
-                        Listen Now
-                      </button>
-                    </div>
+      
+        <div class="mt-4 flex flex-col md:flex-row md:flex-wrap justify-center gap-6">
+          <!-- Card1 -->
+          <div class="flex-shrink-0 w-full md:w-[19rem] h-[auto] md:h-[45rem]">
+            <div class="relative bg-transparent mx-2">
+              <div class="relative overflow-hidden">
+                <div class="mx-6 border border-[#cfafb3] flex items-center justify-center h-4"></div>
+                <img alt="Parent Courses" class="w-full h-[12rem] md:h-[20rem] object-cover" src="assets/cards/card-1.jpg" />
+              </div>
+              <div class="relative w-full">
+                <div class="absolute w-[90%] mx-[5%] p-3 -top-5 bg-[#F1E1E4] text-center heading-container-pink">
+                  <div class="mx-12 absolute title-container inset-x-0 -top-2 py-1 bg-[#C1989F] flex justify-center">
+                    <h2 class="text-[#FAF5F0] font-montserrat text-sm font-medium">Episode - 40</h2>
+                  </div>
+                  <div class="mt-6 mb-4">
+                    <p class="text-[#C1989F] font-montserrat text-lg md:text-xl uppercase w-[95%] mx-auto font-bold">Timing Your Triggers with</p>
+                    <p class="font-mangolia text-xl md:text-2xl text-[#C1989F] mt-3">Emotional Intelligence</p>
+                    <p class="text-gray-700 text-xs md:text-sm my-6">With Stephanie Pinto</p>
+                    <button class="mt-4 bg-[#C1989F] text-[#F1E1E4] uppercase text-xs md:text-sm py-2 px-6 md:px-12 rounded-full w-[80%]">Listen Now</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Card2: -->
-          <div class="flex Heading-blue">
-            <div class="w-[19rem] h-[45rem]">
-              <div class="bg-transparent mx-2 mx-2 mx-2 mx-2">
-                <div class="relative overflow-hidden">
-                  <div
-                    class="mx-6 border border-[#92b2d1] flex items-center justify-center h-4"
-                  ></div>
-                  <img
-                    alt="Parent Courses"
-                    class="z-20 w-full h-[20rem] object-cover"
-                    src="assets/cards/card-2.jpg"
-                  />
-                </div>
-
-                <div class="relative w-full">
-                  <div
-                    class="absolute w-[90%] mx-[5%] p-3 -top-5 bg-[#C2D5E4] text-center heading-container-blue"
-                  >
-                    <div
-                      class="mx-12 absolute title-container-blue inset-x-0 -top-2 py-1 bg-[#376489] flex justify-center"
-                    >
-                      <h2
-                        class="text-[#FAF5F0] font-montserrat text-sm font-medium"
-                      >
-                        Episode - 39
-                      </h2>
-                    </div>
-
-                    <div class="mt-6 mb-4">
-                      <p
-                        class="text-[#376489] font-montserrat text-xl uppercase w-[95%] mx-auto font-bold"
-                      >
-                        Redefining fatherhood with
-                      </p>
-                      <p class="font-mangolia text-2xl text-[#376489] mt-3">
-                        Daniel Franco
-                      </p>
-
-                      <p class="text-gray-700 text-sm my-6">
-                        With Stephanie Pinto
-                      </p>
-                      <button
-                        class="mt-4 bg-[#376489] text-[#F1E1E4] uppercase text-white py-2 text-xs px-12 rounded-full w-[80%]"
-                      >
-                        Listen Now
-                      </button>
-                    </div>
+      
+          <!-- Card2 -->
+          <div class="flex-shrink-0 w-full md:w-[19rem] h-[auto] md:h-[45rem]">
+            <div class="relative bg-transparent mx-2">
+              <div class="relative overflow-hidden">
+                <div class="mx-6 border border-[#92b2d1] flex items-center justify-center h-4"></div>
+                <img alt="Parent Courses" class="w-full h-[12rem] md:h-[20rem] object-cover" src="assets/cards/card-2.jpg" />
+              </div>
+              <div class="relative w-full">
+                <div class="absolute w-[90%] mx-[5%] p-3 -top-5 bg-[#C2D5E4] text-center heading-container-blue">
+                  <div class="mx-12 absolute title-container-blue inset-x-0 -top-2 py-1 bg-[#376489] flex justify-center">
+                    <h2 class="text-[#FAF5F0] font-montserrat text-sm font-medium">Episode - 39</h2>
+                  </div>
+                  <div class="mt-6 mb-4">
+                    <p class="text-[#376489] font-montserrat text-lg md:text-xl uppercase w-[95%] mx-auto font-bold">Redefining Fatherhood with</p>
+                    <p class="font-mangolia text-xl md:text-2xl text-[#376489] mt-3">Daniel Franco</p>
+                    <p class="text-gray-700 text-xs md:text-sm my-6">With Stephanie Pinto</p>
+                    <button class="mt-4 bg-[#376489] text-[#F1E1E4] uppercase text-xs md:text-sm py-2 px-6 md:px-12 rounded-full w-[80%]">Listen Now</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- Card3: -->
-          <div class="flex Heading-pink">
-            <div class="w-[19rem] h-[45rem]">
-              <div class="bg-transparent mx-2 mx-2 mx-2 mx-2">
-                <div class="relative overflow-hidden">
-                  <div
-                    class="mx-6 border border-[#cfafb3] flex items-center justify-center h-4"
-                  ></div>
-                  <img
-                    alt="Parent Courses"
-                    class="z-20 w-full h-[20rem] object-cover"
-                    src="assets/cards/card-3.jpg"
-                  />
-                </div>
-
-                <div class="relative w-full">
-                  <div
-                    class="absolute w-[90%] mx-[5%] p-3 -top-5 bg-[#F1E1E4] text-center heading-container-pink"
-                  >
-                    <div
-                      class="mx-12 absolute title-container inset-x-0 -top-2 py-1 bg-[#C1989F] flex justify-center"
-                    >
-                      <h2
-                        class="text-[#FAF5F0] font-montserrat text-sm font-medium"
-                      >
-                        Episode - 38
-                      </h2>
-                    </div>
-
-                    <div class="mt-6 mb-4">
-                      <p
-                        class="text-[#C1989F] font-montserrat text-lg uppercase w-[95%] mx-auto font-bold"
-                      >
-                        Respond not React <br />: Mastering Your
-                      </p>
-                      <p class="font-mangolia text-2xl text-[#C1989F] mt-3">
-                        Emotional Reaction
-                      </p>
-
-                      <p class="text-gray-700 text-sm my-6">
-                        With Stephanie Pinto
-                      </p>
-                      <button
-                        class="mt-4 bg-[#C1989F] text-[#F1E1E4] uppercase text-white py-2 text-sm px-12 rounded-full w-[80%]"
-                      >
-                        Listen Now
-                      </button>
-                    </div>
+      
+          <!-- Card3 -->
+          <div class="flex-shrink-0 w-full md:w-[19rem] h-[auto] md:h-[45rem]">
+            <div class="relative bg-transparent mx-2">
+              <div class="relative overflow-hidden">
+                <div class="mx-6 border border-[#cfafb3] flex items-center justify-center h-4"></div>
+                <img alt="Parent Courses" class="w-full h-[12rem] md:h-[20rem] object-cover" src="assets/cards/card-3.jpg" />
+              </div>
+              <div class="relative w-full">
+                <div class="absolute w-[90%] mx-[5%] p-3 -top-5 bg-[#F1E1E4] text-center heading-container-pink">
+                  <div class="mx-12 absolute title-container inset-x-0 -top-2 py-1 bg-[#C1989F] flex justify-center">
+                    <h2 class="text-[#FAF5F0] font-montserrat text-sm font-medium">Episode - 38</h2>
+                  </div>
+                  <div class="mt-6 mb-4">
+                    <p class="text-[#C1989F] font-montserrat text-lg md:text-xl uppercase w-[95%] mx-auto font-bold">Respond Not React: Mastering Your</p>
+                    <p class="font-mangolia text-xl md:text-2xl text-[#C1989F] mt-3">Emotional Reaction</p>
+                    <p class="text-gray-700 text-xs md:text-sm my-6">With Stephanie Pinto</p>
+                    <button class="mt-4 bg-[#C1989F] text-[#F1E1E4] uppercase text-xs md:text-sm py-2 px-6 md:px-12 rounded-full w-[80%]">Listen Now</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Card 4 -->
-          <div class="flex Heading-blue">
-            <div class="w-[19rem] h-[45rem]">
-              <div class="bg-transparent mx-2 mx-2 mx-2 mx-2">
-                <div class="relative overflow-hidden">
-                  <div
-                    class="mx-6 border border-[#92b2d1] flex items-center justify-center h-4"
-                  ></div>
-                  <img
-                    alt="Parent Courses"
-                    class="z-20 w-full h-[20rem] object-cover"
-                    src="assets/cards/card-4.jpg"
-                  />
-                </div>
-
-                <div class="relative w-full">
-                  <div
-                    class="absolute w-[90%] mx-[5%] p-3 -top-5 bg-[#C2D5E4] text-center heading-container-blue"
-                  >
-                    <div
-                      class="mx-12 absolute title-container-blue inset-x-0 -top-2 py-1 bg-[#376489] flex justify-center"
-                    >
-                      <h2
-                        class="text-[#FAF5F0] font-montserrat text-sm font-medium"
-                      >
-                        Episode - 37
-                      </h2>
-                    </div>
-
-                    <div class="mt-6 mb-4">
-                      <p
-                        class="text-[#376489] font-montserrat text-xl uppercase w-[95%] mx-auto font-bold"
-                      >
-                        When Validating your Child’s
-                      </p>
-                      <p class="font-mangolia text-2xl text-[#376489] mt-3">
-                        Emotions Backfires
-                      </p>
-
-                      <p class="text-gray-700 text-sm my-6">
-                        With Stephanie Pinto
-                      </p>
-                      <button
-                        class="mt-4 bg-[#376489] text-[#F1E1E4] uppercase text-white py-2 text-xs px-12 rounded-full w-[80%]"
-                      >
-                        Listen Now
-                      </button>
-                    </div>
+      
+          <!-- Card4 -->
+          <div class="flex-shrink-0 w-full md:w-[19rem] h-[auto] md:h-[45rem]">
+            <div class="relative bg-transparent mx-2">
+              <div class="relative overflow-hidden">
+                <div class="mx-6 border border-[#92b2d1] flex items-center justify-center h-4"></div>
+                <img alt="Parent Courses" class="w-full h-[12rem] md:h-[20rem] object-cover" src="assets/cards/card-4.jpg" />
+              </div>
+              <div class="relative w-full">
+                <div class="absolute w-[90%] mx-[5%] p-3 -top-5 bg-[#C2D5E4] text-center heading-container-blue">
+                  <div class="mx-12 absolute title-container-blue inset-x-0 -top-2 py-1 bg-[#376489] flex justify-center">
+                    <h2 class="text-[#FAF5F0] font-montserrat text-sm font-medium">Episode - 37</h2>
+                  </div>
+                  <div class="mt-6 mb-4">
+                    <p class="text-[#376489] font-montserrat text-lg md:text-xl uppercase w-[95%] mx-auto font-bold">When Validating Your Child’s</p>
+                    <p class="font-mangolia text-xl md:text-2xl text-[#376489] mt-3">Emotions Backfires</p>
+                    <p class="text-gray-700 text-xs md:text-sm my-6">With Stephanie Pinto</p>
+                    <button class="mt-4 bg-[#376489] text-[#F1E1E4] uppercase text-xs md:text-sm py-2 px-6 md:px-12 rounded-full w-[80%]">Listen Now</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="flex justify-center">
-          <a
-            href="#"
-            class="bg-[#376489] font-raleway text-[#F1E1E4] uppercase text-sm rounded-full py-3 px-14 mt-10"
-          >
-            All episodes
-          </a>
+      
+        <div class="flex justify-center mt-10">
+          <a href="#" class="bg-[#376489] text-[#F1E1E4] uppercase text-sm md:text-base rounded-full py-3 px-6 md:px-14">All Episodes</a>
         </div>
       </section>
+      
 
       <!-- Section 5 -->
 
-      <section
-        class="relative w-full my-10"
-        style="
-          background-image: linear-gradient(
-              to right,
-              rgba(194, 213, 228, 0.1) 1%,
-              rgba(194, 213, 228, 0) 50% /* Fade out towards the right */
-            ),
-            url('assets/section8.jpg');
-          height: 125vh;
-          background-position: right;
-          background-size: cover;
-          background-repeat: no-repeat;">
-        <div class="relative py-10 text-white pl-24 w-[60%]">
-          <div
-            class="text-[34px] text-[#274C69] font-montserrat mt-24 font-extrabold mb-4"
-          >
+      <section class="relative w-full my-10" id="_section-5">
+        <div class="relative py-10 text-white pl-24 w-[60%]" id="_section-5-content">
+          <div class="text-[34px] text-[#274C69] font-montserrat mt-24 font-extrabold mb-4" id="_section-5-title">
             <h1>
-              <span class="uppercase">Heres How I can Help</span>
-              <span class="font-mangolia text-[39px]">You?</span>
+              <span class="uppercase">Here's How I can Help</span>
+              <span class="font-mangolia text-[39px] section5-you">You?</span>
             </h1>
           </div>
           <div class="w-[83%] font-semibold text-[#274C69] text-sm">
@@ -495,10 +316,8 @@
               senectus consequat. Hendrerit sed enim habitasse in.
             </p>
           </div>
-          <div>
-            <h1
-              class="text-[39px] text-[#274C69] font-mangolia font-normal my-4"
-            >
+          <div id="_section-5-title2">
+            <h1 class="text-[39px] text-[#274C69] font-mangolia font-normal my-4">
               Lorem ipsum dolor sit
             </h1>
             <p class="w-[83%] font-semibold text-[#274C69] text-sm">
@@ -508,11 +327,9 @@
               adipiscing faucibus blandit. Tellus sem facilisis
             </p>
           </div>
-          <div class="mt-7">
-            <a
-              href="#"
-              class="bg-[#376489] font-raleway text-[#F1E1E4] uppercase text-xs rounded-full py-3 px-14"
-              >Book Free Consult
+          <div class="mt-7" id="_section-5-book-free-consult-btn">
+            <a href="#" class="bg-[#376489] font-raleway text-[#F1E1E4] uppercase text-xs rounded-full py-3 px-14">
+              Book Free Consult
             </a>
           </div>
         </div>
@@ -527,41 +344,29 @@
             </div>
             <div class="flex justify-center">
               <!-- first card -->
-              <div
-                class="max-w-[400px] Offerings-hover-blue mx-auto bg-transparent p-1"
-              >
+              <div class="max-w-[400px] Offerings-hover-blue mx-auto bg-transparent p-1">
                 <div class="relative">
                   <div class="w-full h-72 overflow-hidden">
-                    <img src="assets/photo-563 2.png"
-                      alt="Events & Workshops"
-                      class="object-cover scale-[1.5] Offerings-hover-blue-img"
-                    />
+                    <img src="assets/photo-563 2.png" alt="Events & Workshops"
+                      class="object-cover scale-[1.5] Offerings-hover-blue-img"/>
                   </div>
 
-                  <div
-                    class="mx-12 gradiant-border-blue absolute inset-x-0 -top-5 bg-[#C2D5E4] bg-opacity-80 flex items-center justify-center h-16"
-                  >
-                    <h2
-                      class="text-[#274C69] gradiant-border-blue-text font-montserrat leading-6 font-bold text-center text-lg uppercase"
-                    >
+                  <div class="mx-12 gradiant-border-blue absolute inset-x-0 -top-5 bg-[#C2D5E4] bg-opacity-80 flex items-center justify-center h-16">
+                    <h2 class="text-[#274C69] gradiant-border-blue-text font-montserrat leading-6 font-bold text-center text-lg uppercase">
                       Events &<br />Workshops
                     </h2>
                   </div>
                 </div>
 
                 <div class="relative">
-                  <div
-                    class="absolute mx-4 font-montserrat font-medium p-3 Offerings-hover-blue-text py-6 bg-[#C2D5E4] text-center"
-                  >
+                  <div class="absolute mx-4 font-montserrat font-medium p-3 Offerings-hover-blue-text py-6 bg-[#C2D5E4] text-center">
                     <p class="text-[#274C69] text-xs w-[90%] mx-auto">
                       Lorem ipsum dolor sit amet consectetur. Felis tristique
                       vulputate aliquam turpis molestie elementum. Odio urna ...
                       Lorem ipsum dolor sit amet consectetur. Felis tristique
                       vulputate aliquam turpis molestie elementum.
                     </p>
-                    <button
-                      class="mt-4 bg-[#376489] text-white py-2 text-xs px-12 rounded-full transition"
-                    >
+                    <button class="mt-4 bg-[#376489] text-white py-2 text-xs px-12 rounded-full transition">
                       READ MORE
                     </button>
                   </div>
@@ -569,24 +374,15 @@
                 </div>
               </div>
               <!-- second card -->
-              <div
-                class="max-w-[400px] Offerings-hover Offerings-hover-pink mx-auto bg-transparent p-1"
-              >
+              <div class="max-w-[400px] Offerings-hover Offerings-hover-pink mx-auto bg-transparent p-1">
                 <div class="relative">
                   <div class="w-full h-72 overflow-hidden">
-                    <img
-                      src="assets/IMG_9190 1.png"
-                      alt="Events & Workshops"
-                      class="w-full h-72 object-cover scale-[1.5] Offerings-hover-pink-img"
-                    />
+                    <img src="assets/IMG_9190 1.png" alt="Events & Workshops"
+                      class="w-full h-72 object-cover scale-[1.5] Offerings-hover-pink-img"/>
                   </div>
 
-                  <div
-                    class="mx-12 gradiant-border-pink absolute inset-x-0 -top-5 bg-[#F1E1E4] bg-opacity-80 flex items-center justify-center h-16"
-                  >
-                    <h2
-                      class="text-[#C1989F] gradiant-border-pink-text font-montserrat leading-6 font-bold text-center text-lg uppercase"
-                    >
+                  <div class="mx-12 gradiant-border-pink absolute inset-x-0 -top-5 bg-[#F1E1E4] bg-opacity-80 flex items-center justify-center h-16">
+                    <h2 class="text-[#C1989F] gradiant-border-pink-text font-montserrat leading-6 font-bold text-center text-lg uppercase">
                       Group or private <br />Coaching
                     </h2>
                   </div>
@@ -662,33 +458,18 @@
       <!-- Section How it Works -->
 
       <section class="h-max mt-10 mb-20">
-        <div
-          class=" "
-          style="
-            background-image: linear-gradient(
-                rgba(216, 184, 184, 0.9) 20%,
-                rgba(216, 184, 184, 1) 100%
-              ),
-              url('assets/sectionWork/sectionWork.jpg');
-            height: 70vh;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-          "
-        >
+        <div class="_how-it-works">
           <div class="pt-7">
             <h1 class="text-center title-heading text-white">How it works?</h1>
           </div>
           <div class="flex w justify-evenly items-center">
             <div class="max-w-sm flex flex-col items-center relative">
-              <svg
-                class="absolute right-[-83%] z-[50] top-[12px]"
+              <svg class="absolute right-[-83%] z-[50] top-[12px]"
                 width="280"
                 height="1"
                 viewBox="0 0 332 1"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                xmlns="http://www.w3.org/2000/svg">
                 <line
                   x1="0.5"
                   y1="0.5"
@@ -696,37 +477,28 @@
                   y2="0.5"
                   stroke="#274C69"
                   stroke-linecap="round"
-                  stroke-dasharray="12 12"
-                />
+                  stroke-dasharray="12 12"/>
               </svg>
-              <img
-                class="w-20"
+              <img class="w-20"
                 src="assets/sectionWork/IconWork.png"
-                alt="icon-1"
-              />
-              <h2
-                class="text-[#376489] font-montserrat uppercase text-center leading-5 font-bold mt-3 text-[17px]"
-              >
+                alt="icon-1"/>
+              <h2 class="text-[#376489] font-montserrat uppercase text-center leading-5 font-bold mt-3 text-[17px]">
                 Lorem Ipsum <br />
                 Dolor Sit
               </h2>
-              <p
-                class="text-center text-[11px] mt-3 text-[#274C69] font-medium leading-4"
-              >
+              <p class="text-center text-[11px] mt-3 text-[#274C69] font-medium leading-4">
                 Lorem ipsum dolor sit amet consectetur <br />Felis tristique
                 vulputate aliquam turpis <br />
                 molestie elementum.
               </p>
             </div>
             <div class="max-w-sm flex flex-col items-center relative">
-              <svg
-                class="absolute right-[-83%] z-[50] top-[12px]"
+              <svg class="absolute right-[-83%] z-[50] top-[12px]"
                 width="280"
                 height="1"
                 viewBox="0 0 332 1"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                xmlns="http://www.w3.org/2000/svg">
                 <line
                   x1="0.5"
                   y1="0.5"
@@ -734,37 +506,28 @@
                   y2="0.5"
                   stroke="#274C69"
                   stroke-linecap="round"
-                  stroke-dasharray="12 12"
-                />
+                  stroke-dasharray="12 12"/>
               </svg>
-              <img
-                class="w-20"
+              <img class="w-20"
                 src="assets/sectionWork/icon.png"
-                alt="icon-2"
-              />
-              <h2
-                class="text-[#376489] font-montserrat uppercase text-center leading-5 font-bold mt-3 text-[17px]"
-              >
+                alt="icon-2"/>
+              <h2 class="text-[#376489] font-montserrat uppercase text-center leading-5 font-bold mt-3 text-[17px]">
                 Lorem Ipsum <br />
                 Dolor Sit
               </h2>
-              <p
-                class="text-center text-[11px] mt-3 text-[#274C69] font-medium leading-4"
-              >
+              <p class="text-center text-[11px] mt-3 text-[#274C69] font-medium leading-4">
                 Lorem ipsum dolor sit amet consectetur <br />Felis tristique
                 vulputate aliquam turpis <br />
                 molestie elementum.
               </p>
             </div>
             <div class="max-w-sm flex flex-col items-center relative">
-              <svg
-                class="absolute right-[-83%] z-[50] top-[12px]"
+              <svg class="absolute right-[-83%] z-[50] top-[12px]"
                 width="280"
                 height="1"
                 viewBox="0 0 332 1"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                xmlns="http://www.w3.org/2000/svg">
                 <line
                   x1="0.5"
                   y1="0.5"
@@ -772,43 +535,30 @@
                   y2="0.5"
                   stroke="#274C69"
                   stroke-linecap="round"
-                  stroke-dasharray="12 12"
-                />
+                  stroke-dasharray="12 12"/>
               </svg>
-              <img
-                class="w-20"
+              <img class="w-20"
                 src="assets/sectionWork/IconWork3.png"
-                alt="icon-3"
-              />
-              <h2
-                class="text-[#376489] font-montserrat uppercase text-center leading-5 font-bold mt-3 text-[17px]"
-              >
+                alt="icon-3"/>
+              <h2 class="text-[#376489] font-montserrat uppercase text-center leading-5 font-bold mt-3 text-[17px]">
                 Lorem Ipsum <br />
                 Dolor Sit
               </h2>
-              <p
-                class="text-center text-[11px] mt-3 text-[#274C69] font-medium leading-4"
-              >
+              <p class="text-center text-[11px] mt-3 text-[#274C69] font-medium leading-4">
                 Lorem ipsum dolor sit amet consectetur <br />Felis tristique
                 vulputate aliquam turpis <br />
                 molestie elementum.
               </p>
             </div>
             <div class="max-w-sm flex flex-col items-center">
-              <img
-                class="w-20"
+              <img class="w-20"
                 src="assets/sectionWork/IconWork4.png"
-                alt="icon-4"
-              />
-              <h2
-                class="text-[#376489] font-montserrat uppercase text-center leading-5 font-bold mt-3 text-[17px]"
-              >
+                alt="icon-4"/>
+              <h2 class="text-[#376489] font-montserrat uppercase text-center leading-5 font-bold mt-3 text-[17px]">
                 Lorem Ipsum <br />
                 Dolor Sit
               </h2>
-              <p
-                class="text-center text-[11px] mt-3 text-[#274C69] font-medium leading-4"
-              >
+              <p class="text-center text-[11px] mt-3 text-[#274C69] font-medium leading-4">
                 Lorem ipsum dolor sit amet consectetur <br />Felis tristique
                 vulputate aliquam turpis <br />
                 molestie elementum.
@@ -948,25 +698,10 @@
           READ MORE
         </button>
       </section>
-    </div>
 
     <!-- Section - Subscribe -->
     <section class="my-24">
-      <div
-        class="relative w-full my-10"
-        style="
-          background-image: linear-gradient(
-              to left,
-              rgba(194, 213, 228, 1) 20%,
-              rgba(194, 213, 228, 0.9) 100%
-            ),
-            url('https://s3-alpha-sig.figma.com/img/230d/52ea/5fa8a420d4dca2a0c35e12e10464fa48?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fJvGBP4p4WxmQw1st-7wTURBi21abcNWdF3Fms53jo2jVzQPeCMgWvIK5JNRNNi~qO8VE1KD5xxTgCemBphhVg5SiP2yjocSCLBAP6e9kn5fykvhUvX-s2mKswuWb7ENNUzJ1kICXEzhfF3mwQBL1OfKOWPw~VxHqKTpxt3gspmC0NXrL~TZ0k3qDDBC4DHrdqDMW7IdPmsxZAb~eUnNF2UeVLd7xkVvhRwbkonE~Ot516JVyuLbJlqEC8nWvr0~YbX6Oar9hg4K28wAMvjEUQYeynsXP6PUvEkBSdC6q3OIwPCasgBpWHtT0NYpjyubuA-cZFfajhecH1ACPeT0tQ__');
-          height: 74vh;
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-        "
-      >
+      <div class="relative w-full my-10 subscribe-section">
         <div class="flex justify-around h-full">
           <div class="text-center w-[35%]">
             <div class="border-[#738CA5] relative mt-20">
@@ -1133,7 +868,9 @@
 
         <!-- Courses Section -->
         <div class="flex col-span-2 flex-col">
-          <h3 class="font-bold font-montserrat text-2xl text-[#376489] mb-2 font-extrabold">
+          <h3
+            class="font-bold font-montserrat text-2xl text-[#376489] mb-2 font-extrabold"
+          >
             COURSES
           </h3>
           <a class="mb-2 text-[#274C69] underline text-sm font-bold" href="#"
@@ -1155,14 +892,24 @@
 
         <!-- Awards Section -->
         <div class="flex col-span-3 flex-col">
-          <h3 class="font-bold font-montserrat text-2xl text-[#376489] mb-2 font-extrabold">
+          <h3
+            class="font-bold font-montserrat text-2xl text-[#376489] mb-2 font-extrabold"
+          >
             AWARDS
           </h3>
           <div class="flex space-x-2">
-            <img alt="Award 1" class="w-[10rem] h-[10rem]" src="assets/Ausmumpreneur profile pic 1.png"
-              style="aspect-ratio: 100/100; object-fit: cover"/>
-            <img alt="Award 1" class="w-[10rem] h-[10rem]" src="assets/BRONZE AusMumpreneur Awards WINNER  1.png"
-              style="aspect-ratio: 100/100; object-fit: cover"/>
+            <img
+              alt="Award 1"
+              class="w-[10rem] h-[10rem]"
+              src="assets/Ausmumpreneur profile pic 1.png"
+              style="aspect-ratio: 100/100; object-fit: cover"
+            />
+            <img
+              alt="Award 1"
+              class="w-[10rem] h-[10rem]"
+              src="assets/BRONZE AusMumpreneur Awards WINNER  1.png"
+              style="aspect-ratio: 100/100; object-fit: cover"
+            />
           </div>
         </div>
       </div>
@@ -1175,5 +922,18 @@
         <p>&copy; 2024 Stephanie Pinto. All rights reserved.</p>
       </div>
     </footer>
+
+    <script>
+      document.getElementById('menu-btn').addEventListener('click', function() {
+        document.getElementById('nav-menu').classList.toggle('hidden');
+      });
+    
+      document.getElementById('close-btn').addEventListener('click', function() {
+        document.getElementById('nav-menu').classList.add('hidden');
+      });
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    </script>
   </body>
 </html>
