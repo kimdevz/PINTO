@@ -318,7 +318,6 @@
       ._how-it-works svg {
         display: none;
       }
-
   }
 
 
@@ -359,6 +358,13 @@
     .offerings-cards-slide-icon {
       margin-top: 80px;
       display: flex;
+    }
+
+    /* how it works */
+    ._hiw-grid-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+        gap: 10px; /* Adds spacing between the items */
     }
   }
 
