@@ -353,7 +353,13 @@
     }
 
     .offerings-cards-slide-icon {
-      margin-top: 120px;
+      margin-top: 80px;
       display: flex;
+    }
+  }
+
+  @media (max-width: 200px) {
+    .offerings-cards-slide-icon {
+      margin-top: 120px;
     }
   }
