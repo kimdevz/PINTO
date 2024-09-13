@@ -361,6 +361,12 @@
     }
 
     /* how it works */
+    #_hiw-grid-wrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+      gap: 10px; /* Adds spacing between the items */
+    }
+    
     ._hiw-grid-wrap {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
@@ -369,12 +375,17 @@
   }
 
   @media (max-width: 200px) {
+    #_hiw-grid-wrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+      gap: 10px; /* Adds spacing between the items */
+    }
     ._hiw-grid-wrap {
       display: grid;
       grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
       gap: 10px; /* Adds spacing between the items */
     }
-    
+
     .offerings-cards-slide-icon {
       margin-top: 120px;
     }
