@@ -354,5 +354,6 @@
 
     .offerings-cards-slide-icon {
       margin-top: 80px;
+      display: flex;
     }
   }
