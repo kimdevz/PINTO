@@ -1,4 +1,4 @@
-@media (max-width: 430px) {
+@media (max-width: 640px) {
     header nav.container {
         padding: 20px;
         padding-left: 20px;
@@ -79,24 +79,32 @@
     .card {
         width: 310.76px;
         height: 585px;
-      }
-
-      #_section-5 {
-        background-image: url(../assets/mobile/h-i-c-h-y.png);
-        width: 432px;
-        height: 1061px;
     }
+
+    #_section-5 {
+        background-image: url(../assets/mobile/h-i-c-h-y.png);
+        width: 100%;
+        height: 1061px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     #_section-5 div p {
         margin-top: 20px;
-        width: 287px;
+        /* width: 287px; */
         font-size: 14px;
         font-weight: 600;
         text-align: left;
     }
     #_section-5-content {
+        width: 320px;
         padding: 0;
         padding-left: 20px;
         padding-top: 10px;
+    }
+    #_section-5 .content {
+        width: auto;
     }
     #_section-5-title {
         margin: 0;
@@ -126,9 +134,9 @@
         padding-top: 15px;
         padding-bottom: 15px;
       }
-  }
 
-  @media (max-width: 320px) {
+    /* hero section */
+    
     #_hero-section h1 {
         width: 230px;
         font-size: 21px;
@@ -155,11 +163,150 @@
         width: 310.76px;
         height: 585px;
       }
-  } 
+      /* card1 */
+      #podcast-section {
+        margin: 0 auto;
+        width: 310.76px;
+        box-sizing: border-box;
+        
+      }
+      #podcast-section .pod-heading-cards {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 34.13px;
+        text-align: center;
+      }
+      .pod-heading-cards h1.pod {
+    
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 51px;
+      }
+      #card1,#card2 {
+        margin: 0;
+        padding: 0;
+        display: block;
+        height: 579px;
+        width: 310.76px;
+      }
+      #card1 .bg-transparent,#card2 .bg-transparent  {
+        margin: 0;
+      }
+      #card1 div div.heading-container-pink
+      ,#card2 div div.heading-container-pink {
+        padding: 0;
+      }
+      #card1 img,
+      #card2 img {
+        height: 367.55px;
+      }
+      #card1 .timing {
+        width: 249.9px;
+        height: 52px;
+        font-size: 21.1px;
+        line-height: 25.72px;
+        font-weight: 700;
+      }
+      #card1 .emo {
+        /* width: 252px;
+        height: 37px;
+        */
+        height: 37px;
+        font-size: 25.96px;
+        line-height: 36.61px;
+        font-weight: 400;
+      }
+      #card1 .with-steph {
+        font-weight: 500;
+        font-size: 12.98px;
+        line-height: 18.89px;
+      }
+      #card1 .listen {
+        width: 202.84px;
+        height: 32.45px;
+        border-radius: 32.45px;
+        font-size: 12.98px;
+        font-weight: 600;
+        line-height: 15.24px;
+      }
+      #card1 .mx-12,
+      #card2 .mx-12 {
+        width: 112.78px;
+        height: 30.83px;
+        margin: 0 auto;
+      }
+      #card1 .mx-12 h2,
+      #card2 .mx-12 h2 {
+        font-weight: 500;
+        font-size: 12.98px;
+        text-align: center;
+      }
 
-  /* Navbar */
-  /* @media (max-width: 430px) {
-    .md\\:hidden {
-      display: none;
-    }
-  } */
+      /* card2 */
+      #card2 {
+        margin-top: 53px;
+        margin-bottom: 73px;
+      }
+      #card2 .redefining {
+        width: 231.03px;
+        height: 51.91px;
+        font-size: 21px;
+        line-height: 25.6px;
+        font-weight: 700;
+      }
+      #card2 .daniel {
+        /* width: 165px; */
+        height: 35.94px;
+        font-weight: 400;
+        font-size: 25.85px;
+        line-height: 36.45px;
+      }
+      #card2 .with-steph {
+        font-weight: 500;
+        font-size: 12.98px;
+        line-height: 18.89px;
+      }
+      #cards-btn {
+        text-align: center;
+        margin-bottom: 70px;
+      }
+      #cards-btn a {
+        font-weight: 600;
+        font-size: 16px;
+        padding-left: 58px;
+        padding-right: 58px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+      }
+      #card3,#card4 {
+        display: none;
+      }
+
+      /* offferings */
+      #offerings-card1,
+      #offerings-card2 {
+        display: none;
+      }
+
+      #offerings-card3 {
+        width: 330px;
+        height: 467px;
+        padding: 0;
+        margin: 0;
+        margin-top: 30px;
+      }
+
+      .offerings-cards-slide-icon {
+        width: 100%;
+        justify-content: center; 
+        margin-top: 20px;
+      }
+
+      .offerings-cards-slide-icon img {
+        align-items: center;
+        padding: 20px;
+      }
+
+  }

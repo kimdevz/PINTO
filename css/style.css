@@ -305,6 +305,23 @@ body {
         box-sizing: border-box;
     }
 
+
+    /* Section Latest BLog */
+    .latest-blog-hero {
+      background-image: linear-gradient(
+                      rgba(39, 76, 105, 0) 40%,
+                      rgb(37, 140, 218) 100%
+                    ),
+                    url('../assets/blog-images/main.png');
+    }
+
+
+
+
+
+
+
+
     /* Navbar Styles */
     /* #nav-menu {
       display: none;
