@@ -373,9 +373,9 @@
     }
 
     #subscribe-image-section {
-      width: 90%;
+      width: 75%;
       display: block; /* Ensure the image section is visible */
-      margin-top: -100rem; /* Add some space below the image */
+      margin-top: -85rem; /* Add some space below the image */
     }
 
     .subscribe-section {
@@ -393,8 +393,13 @@
     }
 
     #subscribe-content-section {
-      margin-top: -355px;
+      position: absolute;
+      margin-top: 95px;
       width: 100%;
+    }
+
+    #_mt9rem {
+      margin-top: 36rem;
     }
 
     #subscribe-content-section .mt-20{
@@ -405,7 +410,17 @@
     #subscribe-content-section p {
       width: 80%; /* Adjust the text width to fit within the screen */
     }
+
+    /* Section Footer footer-section-links */
+
+    
+
+    
   }
+
+
+
+
   @media (max-width: 320px) {
     #_section-5-content {
       width: 70%;
@@ -447,6 +462,20 @@
       grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
       gap: 10px; /* Adds spacing between the items */
       display: -ms-grid; /* For IE 11 */
+    }
+
+    /* subscribe section */
+    #_mt9rem {
+      margin-top: 39rem;
+    }
+
+    #subscribe-content-section {
+      margin-top: 14px;
+    }
+
+    /* latest-blog */
+    #sec-latest-blog {
+      margin: 0 0 300px 0;
     }
   }
 

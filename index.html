@@ -718,7 +718,7 @@
           </div> <!-- end subscribe content section -->
           <!-- subscribe image section -->
           <div class="relative hidden lg:block sm:block" id="subscribe-image-section">
-            <div class="relative -mt-[9rem]">
+            <div class="relative -mt-[9rem]" id="_mt9rem">
               <img class="w-[24rem] sm:w-[320px] md:w-[24rem] lg:w-[24rem]" src="assets/subscribe.png" alt="" />
             </div>
           </div> <!-- end subscribe image section -->
@@ -728,26 +728,23 @@
 
     <!-- Section - Footer -->
 
-    <footer class="mt-16 mb-6">
-      <div class="container mx-auto grid grid-cols-12 sm:grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-8 justify-center lfc-container">
+    <footer class="mt-16 mb-6" id="footer-section-links">
+      <div class="container mx-auto grid grid-cols-12 sm:grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-8 justify-center lfc-container" id="footer-section-container">
         <!-- Logo Section -->
-        <div class="flex col-span-4 flex-col items-center">
+        <div class="flex col-span-4 flex-col items-center logo-section logo-section-items">
           <img
             alt="Logo"
             class="mb-4 w-auto h-24"
             src="assets/logo.png"
-            style="object-fit: cover"
-          />
+            style="object-fit: cover"/>
 
           <div class="flex items-center ml-16 mt-4 gap-5 flex-wrap">
-            <a href="#" class="rounded-md p-1.5 bg-[#376489]"
-              ><svg
+            <a href="#" class="rounded-md p-1.5 bg-[#376489]"><svg
                 width="15"
                 height="15"
                 viewBox="0 0 19 16"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M15.9082 2.77658C16.6804 2.29347 17.2583 1.53275 17.5338 0.63646C16.8081 1.08702 16.0142 1.40441 15.1862 1.5749C14.0384 0.304289 12.2197 -0.00492117 10.7465 0.820053C9.27323 1.64503 8.51013 3.39995 8.88359 5.10421C5.91111 4.94805 3.14174 3.47876 1.26458 1.06196C0.284931 2.83015 0.785553 5.09049 2.40864 6.22745C1.82171 6.20771 1.24781 6.04142 0.734766 5.74246C0.734766 5.75868 0.734766 5.77491 0.734766 5.79114C0.735105 7.633 1.97563 9.21955 3.70087 9.58457C3.15647 9.73956 2.58542 9.76238 2.03131 9.65129C2.5165 11.2264 3.9038 12.3055 5.48501 12.3377C4.17541 13.4133 2.55809 13.9966 0.89328 13.9937C0.598195 13.9942 0.303341 13.9764 0.0102539 13.9405C1.70083 15.0773 3.66845 15.6807 5.67799 15.6786C8.47373 15.6987 11.1605 14.5453 13.1374 12.4765C15.1142 10.4077 16.2162 7.59613 16.1968 4.67059C16.1968 4.50292 16.193 4.33614 16.1856 4.17027C16.9096 3.62271 17.5345 2.94439 18.0309 2.16718C17.3563 2.48005 16.6408 2.68546 15.9082 2.77658Z"
                   fill="white"
@@ -825,78 +822,82 @@
               </svg>
             </a>
           </div>
-        </div>
+        </div> <!-- End Logo Section -->
 
-        <!-- About Section -->
-        <div class="flex col-span-2 flex-col gap-5 about-container">
-          <h3
-            class="font-bold font-montserrat text-2xl text-[#376489] mb-2 font-extrabold"
-          >
-            ABOUT
-          </h3>
-          <a
-            class="mb-2 text-[#274C69] underline text-sm font-bold uppercase"
-            href="#"
-            >Contact Us</a
-          >
-          <a class="mb-2 text-[#274C69] text-sm font-bold uppercase" href="#"
-            >Resources</a
-          >
-          <a class="mb-2 text-[#274C69] text-sm font-bold uppercase" href="#"
-            >Podcast</a
-          >
-          <a class="text-[#274C69] text-sm font-bold uppercase" href="#"
-            >Books</a
-          >
-        </div>
+        <!-- <div class="about_courses-awards">
+          <div class="aca-col"> -->
+            <!-- About Section -->
+            <div class="flex col-span-2 flex-col gap-5 about-container about-courses-container">
+              <h3
+                class="font-bold font-montserrat text-2xl text-[#376489] mb-2 font-extrabold"
+              >
+                ABOUT
+              </h3>
+              <a
+                class="mb-2 text-[#274C69] underline text-sm font-bold uppercase"
+                href="#"
+                >Contact Us</a
+              >
+              <a class="mb-2 text-[#274C69] text-sm font-bold uppercase" href="#"
+                >Resources</a
+              >
+              <a class="mb-2 text-[#274C69] text-sm font-bold uppercase" href="#"
+                >Podcast</a
+              >
+              <a class="text-[#274C69] text-sm font-bold uppercase" href="#"
+                >Books</a
+              >
+            </div> <!-- End About Section -->
 
-        <!-- Courses Section -->
-        <div class="flex col-span-2 flex-col">
-          <h3
-            class="font-bold font-montserrat text-2xl text-[#376489] mb-2 font-extrabold"
-          >
-            COURSES
-          </h3>
-          <a class="mb-2 text-[#274C69] underline text-sm font-bold" href="#"
-            >Rising Emotional Intelligent Kids</a
-          >
-          <a class="mb-2 text-[#274C69] text-sm font-bold" href="#"
-            >Decoding & Defusing Your Child's Challenging Behavior</a
-          >
-          <a class="mb-2 text-[#274C69] text-sm font-bold" href="#"
-            >Supporting Anxious & Sensitive Kids</a
-          >
-          <a class="mb-2 text-[#274C69] text-sm font-bold" href="#"
-            >Help! I'm a Shouty Parent!</a
-          >
-          <a class="text-[#274C69] text-sm font-bold" href="#"
-            >Emotional Intelligence & Freedom Technique</a
-          >
-        </div>
+            <!-- Courses Section -->
+            <div class="flex col-span-2 flex-col">
+              <h3
+                class="font-bold font-montserrat text-2xl text-[#376489] mb-2 font-extrabold"
+              >
+                COURSES
+              </h3>
+              <a class="mb-2 text-[#274C69] underline text-sm font-bold" href="#"
+                >Rising Emotional Intelligent Kids</a
+              >
+              <a class="mb-2 text-[#274C69] text-sm font-bold" href="#"
+                >Decoding & Defusing Your Child's Challenging Behavior</a
+              >
+              <a class="mb-2 text-[#274C69] text-sm font-bold" href="#"
+                >Supporting Anxious & Sensitive Kids</a
+              >
+              <a class="mb-2 text-[#274C69] text-sm font-bold" href="#"
+                >Help! I'm a Shouty Parent!</a
+              >
+              <a class="text-[#274C69] text-sm font-bold" href="#"
+                >Emotional Intelligence & Freedom Technique</a
+              >
+            </div> <!-- End Courses Section -->
+          <!-- </div> -->
 
-        <!-- Awards Section -->
-        <div class="flex col-span-3 flex-col">
-          <h3
-            class="font-bold font-montserrat text-2xl text-[#376489] mb-2 font-extrabold"
-          >
-            AWARDS
-          </h3>
-          <div class="flex space-x-2">
-            <img
-              alt="Award 1"
-              class="w-[10rem] h-[10rem]"
-              src="assets/Ausmumpreneur profile pic 1.png"
-              style="aspect-ratio: 100/100; object-fit: cover"
-            />
-            <img
-              alt="Award 1"
-              class="w-[10rem] h-[10rem]"
-              src="assets/BRONZE AusMumpreneur Awards WINNER  1.png"
-              style="aspect-ratio: 100/100; object-fit: cover"
-            />
+          <!-- Awards Section -->
+          <div class="flex col-span-3 flex-col" id="awards-section-images-flex">
+            <h3
+              class="font-bold font-montserrat text-2xl text-[#376489] mb-2 font-extrabold"
+            >
+              AWARDS
+            </h3>
+            <div class="flex space-x-2">
+              <img
+                alt="Award 1"
+                class="w-[10rem] h-[10rem]"
+                src="assets/Ausmumpreneur profile pic 1.png"
+                style="aspect-ratio: 100/100; object-fit: cover"
+              />
+              <img
+                alt="Award 1"
+                class="w-[10rem] h-[10rem]"
+                src="assets/BRONZE AusMumpreneur Awards WINNER  1.png"
+                style="aspect-ratio: 100/100; object-fit: cover"
+              />
+            </div>
           </div>
-        </div>
-      </div>
+        </div> <!-- End Awards Section -->
+      <!-- </div> -->
     </footer>
 
     <!-- Section - Footer 3 -->
