@@ -468,6 +468,11 @@
       /*transform: translateX(-50%); Offsets the button to fully center it */
       right: 0;
     }
+
+    /* footer desktop */
+    #footer-section-links {
+      display: none;
+    }
   }
 
 
