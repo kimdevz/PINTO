@@ -320,16 +320,47 @@
       }
 
       #_hiw-grid-wrap {
+        display: grid;
         grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
         gap: 10px; /* Adds spacing between the items */
+        display: -ms-grid; /* For IE 11 */
       }
   }
 
 
   @media (max-width: 430px) {
     #_hiw-grid-wrap {
+      display: grid;
       grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
       gap: 10px; /* Adds spacing between the items */
+      display: -ms-grid; /* For IE 11 */
+    }
+
+    #latest-blog-con-flex {
+      flex-direction: column; /* Stack the sections vertically */
+      gap: 16px; /* Adjust gap between sections */
+      padding: 0 16px; /* Optional: add some padding to the container */
+    }
+  
+    #latest-blog-con-flex .item-left-sec {
+      margin-left: 0; /* Remove the left margin on small screens */
+    }
+  
+    #latest-blog-con-flex .item-left-sec {
+      width: 100%; /* Make the left section full-width */
+    }
+  
+    #latest-blog-con-flex .item-right-sec {
+      width: 100%; /* Ensure the right section is also full-width */
+    }
+
+    #sec-latest-blog {
+      margin: 0;
+    }
+
+    #sec-lblog-btn {
+      display: block;
+      margin: 50px auto 0; /* Center the button horizontally */
     }
   }
 
@@ -370,8 +401,10 @@
 
     /* how it works */
     #_hiw-grid-wrap {
+      display: grid;
       grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
       gap: 10px; /* Adds spacing between the items */
+      display: -ms-grid; /* For IE 11 */
     }
   }
 

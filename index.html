@@ -578,7 +578,7 @@
 
       <!-- Section Latest Blog -->
       <!--  sm:ml-0 sm:mr-0 -->
-      <section class="mx-10 w-full sm:w-[95%]">
+      <section class="mx-10 w-full sm:w-[95%]" id="sec-latest-blog">
         <div>
           <h1 class="title-heading">
             Latest <span class="text-[#C1989F]">Blogs</span>
@@ -587,8 +587,9 @@
         <!-- md:flex-row lg:flex-row   -->
         <!-- sm:flex-col -->
         <div class="container mt-10 w-[95%] sm:w-auto sm:justify-center ">
-          <div class="flex flex-row sm:flex-col md:flex-row lg:flow-row gap-8">
-            <div class="ml-[70px] w-[470px] h-[520px] relative overflow-hidden">
+          <div class="flex flex-row sm:flex-col md:flex-row lg:flow-row gap-8" id="latest-blog-con-flex">
+            <!-- left section -->
+            <div class="item-left-sec ml-[70px] w-[470px] h-[520px] relative overflow-hidden">
               <div class="w-full h-full bg-cover bg-center latest-blog-hero">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6 text-white">
                   <p class="text-center text-sm mb-2">SEPTEMBER 6, 2023</p>
@@ -606,7 +607,7 @@
             </div>
 
             <!-- Right Section -->
-            <div class="w-1/2 sm:w-[95%]">
+            <div class="item-right-sec w-1/2 sm:w-[95%]">
               <div class="space-y-6">
                 <!-- Blog 1 -->
                 <div class="flex overflow-hidden border-none shadow-none">
@@ -687,7 +688,7 @@
             </div>
           </div>
         </div>
-        <button class="mt-10 ml-[38vw] sm:ml-[28.84vw] md:ml-[38vw] lg:ml-[38vw] bg-[#c1989f] my-20 text-white py-2 text-sm px-16 py-2 rounded-full">
+        <button class="mt-10 ml-[38vw] sm:ml-[28.84vw] md:ml-[38vw] lg:ml-[38vw] bg-[#c1989f] my-20 text-white py-2 text-sm px-16 py-2 rounded-full" id="sec-lblog-btn">
           READ MORE
         </button>
       </section>
