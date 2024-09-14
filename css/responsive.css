@@ -336,6 +336,8 @@
       display: -ms-grid; /* For IE 11 */
     }
 
+    /* lastes blog */
+
     #latest-blog-con-flex {
       flex-direction: column; /* Stack the sections vertically */
       gap: 16px; /* Adjust gap between sections */
@@ -362,6 +364,8 @@
       display: block;
       margin: 50px auto 0; /* Center the button horizontally */
     }
+
+    /* subscribe-section */
 
     .subscribe-section .flex {
       flex-direction: column; /* Stack the image section above the content section */
