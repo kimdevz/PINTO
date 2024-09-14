@@ -59,10 +59,9 @@
         text-align: center;
         color: #FAF5F0;
     }
-        #_hero-section h1 br {
-            display: none; /* Hide the <br> tag */
-          }
-    
+    #_hero-section h1 br {
+      display: none; /* Hide the <br> tag */
+    }
     #_hero-section a {
         /* Layout */
       padding: 0.5rem 1.875rem; /* Adjust button padding */
@@ -325,60 +324,57 @@
         gap: 10px; /* Adds spacing between the items */
         display: -ms-grid; /* For IE 11 */
       }
-  }
 
-
-  @media (max-width: 430px) {
-    #_hiw-grid-wrap {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-      gap: 10px; /* Adds spacing between the items */
-      display: -ms-grid; /* For IE 11 */
+    /* latest-blog */
+    #sec-latest-blog {
+      margin: 0 0 300px 0;
     }
-
-    /* lastes blog */
-
+    #blog-post-wrapper h3 {
+      font-size: 9px;
+    }
+    #sec-lblog-btn {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+    #_text-reminder h2 {
+      font-size: 14px;
+    }
+    #_text-reminder button {
+      padding: 8px;
+      font-size: 10px;
+    }
     #latest-blog-con-flex {
       flex-direction: column; /* Stack the sections vertically */
       gap: 50px; /* Adjust gap between sections */
       padding: 0 16px; /* Optional: add some padding to the container */
     }
-  
     #latest-blog-con-flex .item-left-sec {
       margin-left: 0; /* Remove the left margin on small screens */
     }
-  
     #latest-blog-con-flex .item-left-sec {
       width: 100%; /* Make the left section full-width */
     }
-  
     #latest-blog-con-flex .item-right-sec {
       width: 100%; /* Ensure the right section is also full-width */
     }
-
     #sec-latest-blog {
       margin: 0 0 380px 0; /* Replace 20px with your desired bottom margin value */
     }
-
     #blog-post-wrapper img {
       height: 100px;
     }
-
     #blog-post-wrapper .py-2 {
       padding-top: 0;
     }
-
     #blog-post-wrapper h3 {
       font-size: 12px;
       word-wrap: break-word; /* Wrap long words */
       line-height: 1.5; /* Adjust line spacing to ensure good readability */
       white-space: normal; /* Ensure text wraps naturally */
     }
-
     #blog-post-wrapper h3 br {
       display: none;
     }
-
     #sec-lblog-btn {
       display: block;
       margin: 50px auto 0; /* Center the button horizontally */
@@ -386,15 +382,12 @@
       padding-top: 18px;
       padding-bottom: 18px;
     }
-
     #sec-lblog-btn .read-more{
       display: none;
     }
-
     #sec-lblog-btn .all-blogs{
       display: block;
     }
-
     .latest-blog-hero {
       background-image: linear-gradient(
                     rgb(37, 140, 218) 2%,
@@ -403,31 +396,26 @@
                     url('../assets/mobile/rear-view-audience.png');
         
      }
-
     #_text-reminder h2 {
       font-size: 16px;
       font-weight: 700;
       line-height: 19px;
     }
-
     #_text-reminder p {
       font-size: 10px;
     }
 
 
-
-    /* subscribe-section */
-    .subscribe-section .flex {
+     /* subscribe-section */
+     .subscribe-section .flex {
       flex-direction: column; /* Stack the image section above the content section */
       align-items: center; /* Optional: center the items */
     }
-
     #subscribe-image-section {
       width: 75%;
       display: block; /* Ensure the image section is visible */
       margin-top: -85rem; /* Add some space below the image */
     }
-
     .subscribe-section {
       background-image: linear-gradient(
         to left, 
@@ -441,32 +429,47 @@
       background-size: cover;
       background-repeat: no-repeat;
     }
-
     #subscribe-content-section {
       position: absolute;
       margin-top: 95px;
       width: 100%;
     }
-
     #_mt9rem {
       margin-top: 36rem;
     }
-
     #subscribe-content-section .mt-20{
       margin: 0 auto;
       width: 80%; /* Adjust the text width to fit within the screen */
     }
-
     #subscribe-content-section p {
       width: 80%; /* Adjust the text width to fit within the screen */
     }
-
-    /* Section Footer footer-section-links */
-
-    
-
-    
+    /* #subscribe-content-section .relative button { */
+      /* left: 50%;  Moves the button's left edge to the center of the parent */
+      /*transform: translateX(-50%); Offsets the button to fully center it */
+      /* right: 18%;
+      position: absolute; */
+    /* } */
   }
+
+
+
+  @media (max-width: 430px) {
+    #_hiw-grid-wrap {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+      gap: 10px; /* Adds spacing between the items */
+      display: -ms-grid; /* For IE 11 */
+    }
+
+    /* subscribe-section */
+    #subscribe-content-section .relative button {
+      /* left: 50%;  Moves the button's left edge to the center of the parent */
+      /*transform: translateX(-50%); Offsets the button to fully center it */
+      right: 0;
+    }
+  }
+
 
 
 
@@ -543,8 +546,6 @@
       padding: 8px;
       font-size: 10px;
     }
-    
-    
   }
 
   @media (max-width: 200px) {
