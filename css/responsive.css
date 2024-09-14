@@ -450,6 +450,51 @@
       /* right: 18%;
       position: absolute; */
     /* } */
+
+    /* Footer 1 Section */
+    /* footer desktop */
+    #footer-section-links {
+      display: none;
+    }
+    /* footer mobile */
+    #footer-section-componet-small {
+      display: block;
+    }
+    #logo-section-container {
+      display: flex;
+    }
+    .logo-footer {
+      margin-left: 10px;
+    }
+    .social-links-icon {
+      display: flex;
+      padding-left: 20px;
+      gap: 24px;
+    }
+    .about_courses-awards-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 30px 20px;
+    }
+    .about-courses-sections {
+      flex:1; /* Takes up twice as much space */
+    }
+    .awards-section {
+        flex: 1; /* Takes up less space */
+    }
+    .courses-section {
+      padding-top: 30px;
+    }
+    .awards-section #bronze-awards-img{
+      padding-top: 10px;
+      width: auto;
+    }
+    .awards-section #nominee-awards-img {
+      padding-top: 20px;
+      width: auto;
+    }
   }
 
 
@@ -469,9 +514,15 @@
       right: 0;
     }
 
+    /* Footer 1 Section */
     /* footer desktop */
-    #footer-section-links {
-      display: none;
+    .awards-section #bronze-awards-img{
+      padding-top: 10px;
+      width: 100%;
+    }
+    .awards-section #nominee-awards-img {
+      padding-top: 20px;
+      width: 100%;
     }
   }
 
