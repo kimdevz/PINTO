@@ -355,15 +355,53 @@
     }
 
     #sec-latest-blog {
-      margin: 0;
+      margin: 0 0 380px 0; /* Replace 20px with your desired bottom margin value */
     }
 
     #sec-lblog-btn {
       display: block;
       margin: 50px auto 0; /* Center the button horizontally */
     }
-  }
 
+    .subscribe-section .flex {
+      flex-direction: column; /* Stack the image section above the content section */
+      align-items: center; /* Optional: center the items */
+    }
+
+    #subscribe-image-section {
+      width: 90%;
+      display: block; /* Ensure the image section is visible */
+      margin-top: -100rem; /* Add some space below the image */
+    }
+
+    .subscribe-section {
+      background-image: linear-gradient(
+        to left, 
+        rgba(194, 213, 228, 0.1) 0%, 
+        rgba(194, 213, 228, 0.1) 100%
+        ), 
+        url(../assets/mobile/subscribe-section-bg.png),
+        url(../assets/mobile/subscribe-blue-bg.png);
+      height: 608px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    #subscribe-content-section {
+      margin-top: -355px;
+      width: 100%;
+    }
+
+    #subscribe-content-section .mt-20{
+      margin: 0 auto;
+      width: 80%; /* Adjust the text width to fit within the screen */
+    }
+
+    #subscribe-content-section p {
+      width: 80%; /* Adjust the text width to fit within the screen */
+    }
+  }
   @media (max-width: 320px) {
     #_section-5-content {
       width: 70%;
