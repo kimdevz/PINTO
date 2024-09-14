@@ -318,11 +318,19 @@
       ._how-it-works svg {
         display: none;
       }
+
+      #_hiw-grid-wrap {
+        grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+        gap: 10px; /* Adds spacing between the items */
+      }
   }
 
 
   @media (max-width: 430px) {
-
+    #_hiw-grid-wrap {
+      grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+      gap: 10px; /* Adds spacing between the items */
+    }
   }
 
   @media (max-width: 320px) {
