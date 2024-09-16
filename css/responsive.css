@@ -2,6 +2,9 @@
     /* .intro-section {
       width: auto;
     } */
+    #nav-left-logo {
+      height: 4rem;
+    }
     header nav.container {
         padding: 20px;
         padding-left: 20px;
