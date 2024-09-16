@@ -672,5 +672,12 @@
         margin: auto;
         text-align: center;
     }
+
+    #_hero-section {
+      background-image: url(../assets/1920-res.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   } 
   
