@@ -24,24 +24,25 @@
               <img src="assets/logo.png" class="h-8 md:h-[45px]" alt="Profile Icon" />
             </a>
             <!-- Left Menu (Only on Large Devices) -->
-            <div class="hidden md:flex lg:flex space-x-14" style="margin-left: 0px;">
+            <!-- md:flex lg:flex  -->
+            <div class="flex hidden space-x-14 md:flex lg:flex md:space-x-6 lg:space-x-14 md:text-[10px] 2xl:text-[20px] lg:font-bold" style="margin-left: 0px;">
               <a href="/about" class="hover:text-blue-500">About</a>
               <a href="/courses" class="hover:text-blue-500">Courses</a>
               <a href="/resources" class="hover:text-blue-500">Resources</a>
             </div>
             
             <!-- Logo -->
-            <div class="invisible md:visible lg:visible items-center sm:space-x-3 sm:rtl:space-x-reverse">
+            <div class="invisible md:visible lg:visible items-center sm:space-x-3 sm:rtl:space-x-reverse" id="stephanie-logo-section">
               <a href="#">
-                <img src="assets/logo.png" alt="Logo" class="transform h-[35px] md:h-[70px] lg:h-[50px] xl:h-[70px]" />
+                <img src="assets/logo.png" alt="Logo" class="transform h-[35px] md:h-[70px] lg:h-[50px] xl:h-[70px] 2xl:w-[294px] 2xl:h-[150px]" />
               </a>
             </div>
 
             <!-- Right Menu (Only on Large Devices) -->
-            <div class="hidden md:flex lg:flex space-x-14 place-items-center">
-              <a href="#" class="hover:text-blue-500 md:text-sm sm:text-xs md:text-center">Book</a>
-              <a href="#" class="hover:text-blue-500 md:text-sm sm:text-xs md:text-center">Work With Me</a>
-              <a href="#" class="hover:text-blue-500 md:text-sm sm:text-xs md:text-center">Blog</a>
+            <div class="flex hidden space-x-14 place-items-center md:flex lg:flex md:space-x-6 lg:space-x-14 md:text-[10px] 2xl:text-[20px]" id="right-menu-section">
+              <a href="#" class="hover:text-blue-500">Book</a>
+              <a href="#" class="hover:text-blue-500">Work With Me</a>
+              <a href="#" class="hover:text-blue-500">Blog</a>
             </div>
 
             <!-- Menu List -->
@@ -67,12 +68,12 @@
       </header>
 
       <!-- Hero Section with Background Image and Overlay -->
-      <section class="relative h-screen hero-section w-full bg-cover bg-center bg-left" id="_hero-section">
+      <section class="relative h-screen hero-section w-full bg-cover bg-center bg-left sm:bg-center md:bg-center lg:bg-center" id="_hero-section">
         <div class="relative h-[90%] flex flex-col justify-center items-center text-white pl-24 w-1/2">
-          <h2 class="text-white font-mangolia text-[28px] leading-[56.4px] text-center mb-1">
+          <h2 class="text-white font-mangolia text-[28px] leading-[56.4px] text-center mb-1 2xl:text-[40px] 2xl:leading-[3] 2xl:font-normal">
             Lorem ipsum dolor sit amet consectetur.
           </h2>
-          <h1 style="font-weight: 800" class="uppercase text-[40px] text-center">
+          <h1 style="font-weight: 800" class="uppercase text-[40px] text-center 2xl:text-[60px] 2xl:font-extrabold">
             Emotional <br />
             Intelligence <span class="speaker">Speaker</span> <br />
             & Author
@@ -86,14 +87,14 @@
       </section>
 
       <!-- Introduction Section -->
-      <section class="flex flex-col md:flex-row m-4 z-10 w-full intro-section">
+      <section class="md:w-auto lg:w-[100%] lg:m-[60px] xl:w-[100%] flex flex-col md:flex-row m-4 z-10 w-full intro-section">
         <!-- Text Content -->
-        <div class="w-full md:w-[50%] flex justify-center items-center z-10 p-4 sm:p-0">
+        <div class="w-full md:w-[50%] flex justify-center items-center z-10 p-4 sm:p-0 2xl:w-[790px] 2xl:h-[790px] 2xl:left-[160px]">
           <div>
-            <h2 class="text-[28px] md:text-[40px] mt-8 md:mt-12 px-6 md:px-[23px] text-[#376489] font-bold mb-4 font-[400] sm:pr-0 font-brittany">
+            <h2 class="text-[28px] md:text-[40px] mt-8 md:mt-12 px-6 md:px-[23px] text-[#376489] font-bold mb-4 font-[400] sm:pr-0 font-brittany 2xl:text-[60px] 2xl:leading-2">
               Hi, I'm <span class="text-[#C1989F]">Stephanie</span>
             </h2>
-            <div class="text-[#274C69] leading-[22px] md:leading-[17px] px-6 md:px-[23px] font-[500] space-y-4 md:space-y-6 text-[16px] md:text-[14px]">
+            <div class="text-[#274C69] leading-[22px] md:leading-[17px] px-6 md:px-[23px] font-[500] space-y-4 md:space-y-6 text-[16px] md:text-[14px] 2xl:text-[20px] 2xl:leading-[29.1px]">
               <p>
                 Lorem ipsum dolor sit amet consectetur. Nibh consectetur mi nulla nec. Risus id risus risus duis quisque dignissim amet. Tempus enim volutpat elit vel a nisl eu felis. Leo eget donec ullamcorper adipiscing faucibus blandit. Tellus sem facilisis proin amet sit egestas purus.
               </p>
@@ -113,7 +114,7 @@
       </section>
 
       <!-- Section 2: Why Emotional Intelligent Parenting? -->
-      <section class="flex flex-col-reverse md:flex-row relative m-4 md:m-[60px] mb-[2px] pb-[30px] w-full overflow-hidden">
+      <section class="flex flex-col-reverse md:flex-row relative m-4 md:m-0 mb-[2px] pb-[30px] w-full overflow-hidden md:justify-center">
         <!-- Background Image -->
         <div class="absolute w-full top-[490px] md:top-auto md:-bottom-[200px] -z-[50]">
           <div class="relative">
@@ -124,8 +125,8 @@
         
       
         <!-- Image Section (below text on small devices) -->
-        <div class="w-full md:w-[40%] flex justify-center items-center p-4 relative">
-          <img class="w-[85%] md:w-[95%]" src="assets/section-2.png" alt="Image" />
+        <div class="w-full md:w-[45%] flex justify-center items-center p-4 relative md:p-0">
+          <img class="w-[85%] md:w-[100%]" src="assets/section-2.png" alt="Image" />
         </div>
       
         <!-- Text Content -->
@@ -156,7 +157,7 @@
       
       
       <!-- Section 3: Image Banner -->
-    <section class="relative flex overflow-x-hidden items-center justify-center h-[80%] w-full bg-cover bg-center bg-left" id="_image-banner">
+    <section class="relative flex overflow-x-hidden items-center justify-center 2xl:justify-between lg:justify-between h-[80%] w-full bg-cover bg-center bg-left" id="_image-banner">
       <div class="flex-shrink-0 p-2">
         <img class="w-[80%] resize-image" src="assets/banner/first.png" alt="Image" />
       </div>
@@ -292,12 +293,12 @@
       </section>
       
 
-      <!-- Section 5 -->
+      <!-- Section 5 Here's How I can Help -->
 
       <section class="relative w-full my-10" id="_section-5">
-        <div class="relative py-10 text-white pl-24 w-[60%]" id="_section-5-content">
-          <div class="text-[34px] text-[#274C69] font-montserrat mt-24 font-extrabold mb-4" id="_section-5-title">
-            <h1>
+        <div class="relative py-10 text-white pl-24 w-[60%] md:pl-[24px] lg:pl-[96px]" id="_section-5-content">
+          <div class="text-[34px] md:mt-0 lg:mt-24 text-[#274C69] font-montserrat mt-24 font-extrabold mb-4" id="_section-5-title">
+            <h1 class="md:leading-8">
               <span class="uppercase">Here's How I can Help</span>
               <span class="font-mangolia text-[39px] section5-you">You?</span>
             </h1>
@@ -346,7 +347,7 @@
             </div>
             <div class="flex justify-center">
               <!-- first card -->
-              <div class="max-w-[400px] md:max-w-[400px] lg:max-w-[400px] Offerings-hover-blue mx-auto bg-transparent p-1" id="offerings-card1">
+              <div class="md:hidden lg:inline xl:inline max-w-[400px] md:max-w-[400px] lg:max-w-[400px] Offerings-hover-blue mx-auto bg-transparent p-1" id="offerings-card1">
                 <div class="relative">
                   <div class="w-full h-72 overflow-hidden">
                     <img src="assets/photo-563 2.png" alt="Events & Workshops"
@@ -376,7 +377,7 @@
                 </div>
               </div>
               <!-- second card -->
-              <div class="max-w-[400px] Offerings-hover Offerings-hover-pink mx-auto bg-transparent p-1" id="offerings-card2">
+              <div class="md:hidden lg:inline xl:inline max-w-[400px] Offerings-hover Offerings-hover-pink mx-auto bg-transparent p-1" id="offerings-card2">
                 <div class="relative">
                   <div class="w-full h-72 overflow-hidden">
                     <img src="assets/IMG_9190 1.png" alt="Events & Workshops"
@@ -453,7 +454,7 @@
               <!-- third card end -->
             </div>
           </div>
-          <div class="lg:hidden offerings-cards-slide-icon">
+          <div class="lg:hidden xl:hidden flex justify-center items-center md:mt-[180px] offerings-cards-slide-icon">
               <img src="assets/mobile/icon-slider.png" alt="Slide Icon">
            </div>
         </div>
@@ -469,7 +470,7 @@
           <div class="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 justify-evenly items-center" id="_hiw-grid-wrap">
             <!-- step 1 -->
             <div class="max-w-sm flex flex-col items-center relative">
-              <svg class="absolute right-[-83%] z-[50] top-[12px] sm:hidden"
+              <svg class="absolute right-[-83%] z-[50] top-[12px] sm:invisible lg:visible"
                 width="280"
                 height="1"
                 viewBox="0 0 332 1"
@@ -499,7 +500,7 @@
             </div>
             <!-- step 2 -->
             <div class="max-w-sm flex flex-col items-center relative">
-              <svg class="absolute right-[-83%] z-[50] top-[12px] sm:hidden"
+              <svg class="absolute right-[-83%] z-[50] top-[12px] sm:invisible lg:visible"
                 width="280"
                 height="1"
                 viewBox="0 0 332 1"
@@ -578,7 +579,7 @@
 
       <!-- Section Latest Blog -->
       <!--  sm:ml-0 sm:mr-0 -->
-      <section class="mx-10 w-full sm:w-[95%]" id="sec-latest-blog">
+      <section class="mx-10 w-full sm:w-[95%] md:w-[100%] md:ml-0 md:mr-0 lg:ml-[40px] lg:mr-[40px]" id="sec-latest-blog">
         <div>
           <h1 class="title-heading">
             Latest <span class="text-[#C1989F]">Blogs</span>
@@ -587,9 +588,9 @@
         <!-- md:flex-row lg:flex-row   -->
         <!-- sm:flex-col -->
         <div class="container mt-10 w-[95%] sm:w-auto sm:justify-center ">
-          <div class="flex flex-row sm:flex-col md:flex-row lg:flow-row gap-8" id="latest-blog-con-flex">
+          <div class="md:pl-[20px] lg:pl-[0px] flex flex-row sm:flex-col md:flex-row lg:flow-row gap-8" id="latest-blog-con-flex">
             <!-- left section -->
-            <div class="item-left-sec ml-[70px] w-[470px] h-[520px] relative overflow-hidden" id="_text-reminder">
+            <div class="md:ml-0 item-left-sec ml-[70px] w-[470px] h-[520px] relative overflow-hidden" id="_text-reminder">
               <div class="w-full h-full bg-cover bg-center latest-blog-hero">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6 text-white">
                   <p class="text-center text-sm mb-2">SEPTEMBER 6, 2023</p>
@@ -734,7 +735,7 @@
             src="assets/logo.png"
             style="object-fit: cover"/>
 
-          <div class="flex items-center ml-16 mt-4 gap-5 flex-wrap">
+          <div class="flex items-center ml-16 lg:ml-16 md:ml-10 mt-4 gap-5 flex-wrap">
             <a href="#" class="rounded-md p-1.5 bg-[#376489]"><svg
                 width="15"
                 height="15"
@@ -877,7 +878,7 @@
             >
               AWARDS
             </h3>
-            <div class="flex space-x-2">
+            <div class="flex space-x-2 lg:flex-col md:flex-col lg:space-x-0 md:space-x-0 md:gap-2 lg:gap-2">
               <img
                 alt="Award 1"
                 class="w-[10rem] h-[10rem]"

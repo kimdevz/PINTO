@@ -1,4 +1,7 @@
 @media (max-width: 640px) {
+    /* .intro-section {
+      width: auto;
+    } */
     header nav.container {
         padding: 20px;
         padding-left: 20px;
@@ -69,11 +72,17 @@
       text-transform: uppercase;
     }
 
+    /* image banner  */
+    #_image-banner div {
+      padding: 8px 0;
+    }
     .resize-image {
-        max-width: 40px; /* Adjust width as needed */
+        max-width: 80px; /* Adjust width as needed */
         margin: auto;
         text-align: center;
     }
+
+
 
     .card {
         width: 310.76px;
@@ -152,11 +161,6 @@
         text-align: center;
         text-transform: uppercase;
     }
-    .resize-image {
-        max-width: 30px; /* Adjust width as needed */
-        margin: auto;
-        text-align: center;
-      }
 
       .card {
         width: 310.76px;
@@ -328,6 +332,9 @@
     /* latest-blog */
     #sec-latest-blog {
       margin: 0 0 300px 0;
+    }
+    #sec-latest-blog .container {
+      width: 100%;
     }
     #blog-post-wrapper h3 {
       font-size: 9px;
@@ -524,10 +531,49 @@
       padding-top: 20px;
       width: 100%;
     }
+
+    /* image banner  */
+    #_image-banner div {
+      padding: 8px 0;
+    }
+    .resize-image {
+        max-width: 60px; /* Adjust width as needed */
+    }
+
   }
 
+  @media (min-width: 768px) {
+    #right-menu-section,
+    #stephanie-logo-section {
+      margin-left: 30px;
+    }
 
+    /* image banner  */
+    #_image-banner div {
+      padding: 8px 0;
+    }
+    .resize-image {
+        max-width: 100px; /* Adjust width as needed */
+    }
+  }
 
+  @media (min-width: 1024px) {
+    #right-menu-section,
+    #stephanie-logo-section {
+      margin-left: 90px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    /* image banner  */
+    #_image-banner div {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .resize-image {
+        min-width: 130px; /* Adjust width as needed */
+    }
+  }
 
 
   @media (max-width: 320px) {
@@ -602,6 +648,14 @@
       padding: 8px;
       font-size: 10px;
     }
+
+    /* image banner  */
+    #_image-banner div {
+      padding: 8px 0;
+    }
+    .resize-image {
+        max-width: 45px; /* Adjust width as needed */
+    }
   }
 
   @media (max-width: 200px) {
@@ -609,3 +663,17 @@
       margin-top: 120px;
     }
   }
+
+	 @media (min-width: 1536px) {
+    /* image banner  */
+    #_image-banner div {
+      padding-top: 56px;
+      padding-bottom: 56px;
+    }
+    .resize-image {
+        min-width: 200px; /* Adjust width as needed */
+        margin: auto;
+        text-align: center;
+    }
+  } 
+  
